@@ -1,0 +1,1036 @@
+Uri: https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\npm\feather-icons\dist\feather.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\ajax\libs\ion-rangeslider\2.3.0\css\ion.rangeSlider.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\ajax\libs\ion-rangeslider\2.3.0\js\ion.rangeSlider.min.js
+Content Type: application/javascript
+
+Uri: https://code.jquery.com/jquery-3.6.0.min.js
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc9.ttf
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\s\roboto\v30\KFOlCnqEu92Fr1MmEU9fABc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc9.ttf
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\s\roboto\v30\KFOlCnqEu92Fr1MmSU5fABc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxP.ttf
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\s\roboto\v30\KFOmCnqEu92Fr1Mu5mxP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKew7z.ttf
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\s\ubuntu\v20\4iCs6KVjbNBYlgoKew7z.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjtGyI.ttf
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\s\ubuntu\v20\4iCv6KVjbNBYlgoC1CzjtGyI.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jtGyI.ttf
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\s\ubuntu\v20\4iCv6KVjbNBYlgoCjC3jtGyI.ttf
+Content Type: font/ttf
+
+Uri: https://new15945708035892.myaddshop.ru/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/articles/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\articles\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/articles/skladnoj-smartfon/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\articles\skladnoj-smartfon\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/articles/smartfony-i-vredonosnye-programmy/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\articles\smartfony-i-vredonosnye-programmy\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/basket/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\basket\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/s-bolshim-ekranom/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\s-bolshim-ekranom\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/s-emkoj-batareej/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\s-emkoj-batareej\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/s-horoshej-kameroj/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\s-horoshej-kameroj\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/smartfony-alcatel/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\smartfony-alcatel\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/smartfony-apple/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\smartfony-apple\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/smartfony-bluefox/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\smartfony-bluefox\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/smartfony-huawei/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\smartfony-huawei\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/smartfony-nokia/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\smartfony-nokia\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/smartfony-philips/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\smartfony-philips\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/categories/smartfony-samsung/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\categories\smartfony-samsung\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/css/framework7-icons.css
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\css\framework7-icons.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/css/normalize.css
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\css\normalize.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/css/shop/mobile.css?ver=1710279352
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\css\shop\mobile.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/css/shop/themes/base/style.css?ver=1711906659
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\css\shop\themes\base\style.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/css/shop/themes/templates/kanasi.css?ver=1710605584
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\css\shop\themes\templates\kanasi.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/css/swiper.css
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\css\swiper.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/dostavka-i-oplata/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\dostavka-i-oplata\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/favorites/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\favorites\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/fonts/Framework7Icons-Regular.eot
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\fonts\Framework7Icons-Regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://new15945708035892.myaddshop.ru/fonts/Framework7Icons-Regular.ttf
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\fonts\Framework7Icons-Regular.ttf
+Content Type: application/octet-stream
+
+Uri: https://new15945708035892.myaddshop.ru/fonts/Framework7Icons-Regular.woff
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\fonts\Framework7Icons-Regular.woff
+Content Type: application/font-woff
+
+Uri: https://new15945708035892.myaddshop.ru/fonts/Framework7Icons-Regular.woff2
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\fonts\Framework7Icons-Regular.woff2
+Content Type: application/octet-stream
+
+Uri: https://new15945708035892.myaddshop.ru/forgot-password/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\forgot-password\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/10_1594634478.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\10_1594634478.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/10_1_1594634481.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\10_1_1594634481.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/10_2_1594634484.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\10_2_1594634484.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/10_3_1594634486.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\10_3_1594634486.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/11_1594634924.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\11_1594634924.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/11_1_1594634927.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\11_1_1594634927.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/11_2_1594634929.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\11_2_1594634929.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/11_3_1594634931.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\11_3_1594634931.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/12_1594635327.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\12_1594635327.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/12_1_1594635329.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\12_1_1594635329.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/12_2_1594635332.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\12_2_1594635332.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/13_1594635768.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\13_1594635768.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/13_1_1594635770.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\13_1_1594635770.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/13_2_1594635772.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\13_2_1594635772.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/13_3_1594635775.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\13_3_1594635775.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/14_1594636188.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\14_1594636188.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/14_1_1594636191.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\14_1_1594636191.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/14_2_1594636193.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\14_2_1594636193.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/14_3_1594636195.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\14_3_1594636195.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/15_1594636400.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\15_1594636400.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/15_1_1594636402.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\15_1_1594636402.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/15_2_1594636404.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\15_2_1594636404.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/15_3_1594636407.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\15_3_1594636407.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/1_1594629788.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\1_1594629788.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/1_1_1594629794.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\1_1_1594629794.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/1_2_1594629796.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\1_2_1594629796.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/1_3_1594629797.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\1_3_1594629797.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/2_1594630017.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\2_1594630017.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/2_1_1594630020.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\2_1_1594630020.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/2_2_1594630022.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\2_2_1594630022.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/2_3_1594630024.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\2_3_1594630024.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/3_1594630191.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\3_1594630191.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/3_1_1594630194.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\3_1_1594630194.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/3_2_1594630195.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\3_2_1594630195.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/3_3_1594630197.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\3_3_1594630197.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/4_1594631052.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\4_1594631052.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/4_1_1594631054.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\4_1_1594631054.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/4_2_1594631057.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\4_2_1594631057.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/4_3_1594631060.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\4_3_1594631060.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/5_1594631249.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\5_1594631249.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/5_1_1594631252.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\5_1_1594631252.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/5_2_1594631254.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\5_2_1594631254.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/5_3_1594631257.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\5_3_1594631257.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/6_1594631642.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\6_1594631642.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/6_1_1594631647.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\6_1_1594631647.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/6_2_1594631649.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\6_2_1594631649.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/6_3_1594631650.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\6_3_1594631650.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/7_1594631822.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\7_1594631822.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/7_1_1594631825.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\7_1_1594631825.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/7_2_1594631828.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\7_2_1594631828.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/7_3_1594631830.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\7_3_1594631830.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/8_1594632009.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\8_1594632009.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/8_1_1594632012.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\8_1_1594632012.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/8_2_1594632014.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\8_2_1594632014.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/8_3_1594632016.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\8_3_1594632016.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/9_1594634307.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\9_1594634307.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/9_1_1594634310.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\9_1_1594634310.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/9_2_1594634312.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\9_2_1594634312.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/100x100/1018/items/9_3_1594634315.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\100x100\1018\items\9_3_1594634315.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/1280x500/1018/sliders/slayder1_15946427583309.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\1280x500\1018\sliders\slayder1_15946427583309.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/1280x500/1018/sliders/slayder2_159464287105.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\1280x500\1018\sliders\slayder2_159464287105.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/150x0/1018/logo/logo_15946433853734.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\150x0\1018\logo\logo_15946433853734.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x0/1018/logo/logo_15946433853734.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x0\1018\logo\logo_15946433853734.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/10_1594634478.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\10_1594634478.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/10_1_1594634481.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\10_1_1594634481.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/11_1594634924.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\11_1594634924.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/11_1_1594634927.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\11_1_1594634927.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/12_1594635327.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\12_1594635327.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/12_1_1594635329.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\12_1_1594635329.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/13_1594635768.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\13_1594635768.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/13_1_1594635770.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\13_1_1594635770.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/14_1594636188.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\14_1594636188.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/14_1_1594636191.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\14_1_1594636191.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/15_1594636400.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\15_1594636400.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/15_1_1594636402.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\15_1_1594636402.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/1_1594629788.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\1_1594629788.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/1_1_1594629794.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\1_1_1594629794.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/2_1594630017.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\2_1594630017.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/2_1_1594630020.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\2_1_1594630020.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/3_1594630191.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\3_1594630191.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/3_1_1594630194.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\3_1_1594630194.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/4_1594631052.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\4_1594631052.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/4_1_1594631054.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\4_1_1594631054.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/5_1594631249.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\5_1594631249.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/5_1_1594631252.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\5_1_1594631252.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/6_1594631642.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\6_1594631642.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/6_1_1594631647.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\6_1_1594631647.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/7_1594631822.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\7_1594631822.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/7_1_1594631825.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\7_1_1594631825.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/8_1594632009.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\8_1594632009.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/8_1_1594632012.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\8_1_1594632012.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/9_1594634307.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\9_1594634307.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/250x250/1018/items/9_1_1594634310.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\250x250\1018\items\9_1_1594634310.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/300x205/1018/categories/alcatel-1s-16_15968070862733.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\300x205\1018\categories\alcatel-1s-16_15968070862733.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/300x205/1018/categories/kategoriya1_1594641226089.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\300x205\1018\categories\kategoriya1_1594641226089.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/300x205/1018/categories/kategoriya2_15946412218989.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\300x205\1018\categories\kategoriya2_15946412218989.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/300x205/1018/categories/kategoriya3_15946412175948.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\300x205\1018\categories\kategoriya3_15946412175948.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/300x205/1018/categories/og-mwc_2020_15968069895435.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\300x205\1018\categories\og-mwc_2020_15968069895435.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/300x205/1018/categories/snimok_ekrana_2019-09-09_v_21-00-17_15968070095011.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\300x205\1018\categories\snimok_ekrana_2019-09-09_v_21-00-17_15968070095011.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/360x180/1018/news/novosti1_15946418237648.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\360x180\1018\news\novosti1_15946418237648.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/360x180/1018/news/novosti2_15946419791606.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\360x180\1018\news\novosti2_15946419791606.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/376x242/1018/categories/alcatel-1s-16_15968070862733.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\376x242\1018\categories\alcatel-1s-16_15968070862733.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/376x242/1018/categories/kategoriya1_1594641226089.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\376x242\1018\categories\kategoriya1_1594641226089.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/376x242/1018/categories/kategoriya2_15946412218989.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\376x242\1018\categories\kategoriya2_15946412218989.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/376x242/1018/categories/kategoriya3_15946412175948.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\376x242\1018\categories\kategoriya3_15946412175948.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/376x242/1018/categories/og-mwc_2020_15968069895435.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\376x242\1018\categories\og-mwc_2020_15968069895435.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/376x242/1018/categories/snimok_ekrana_2019-09-09_v_21-00-17_15968070095011.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\376x242\1018\categories\snimok_ekrana_2019-09-09_v_21-00-17_15968070095011.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/64x64/1018/favicon/favikonka_15946435384164.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\64x64\1018\favicon\favikonka_15946435384164.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/10_1594634478.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\10_1594634478.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/10_1_1594634481.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\10_1_1594634481.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/10_2_1594634484.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\10_2_1594634484.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/10_3_1594634486.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\10_3_1594634486.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/11_1594634924.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\11_1594634924.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/11_1_1594634927.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\11_1_1594634927.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/11_2_1594634929.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\11_2_1594634929.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/11_3_1594634931.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\11_3_1594634931.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/12_1594635327.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\12_1594635327.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/12_1_1594635329.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\12_1_1594635329.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/12_2_1594635332.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\12_2_1594635332.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/13_1594635768.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\13_1594635768.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/13_1_1594635770.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\13_1_1594635770.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/13_2_1594635772.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\13_2_1594635772.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/13_3_1594635775.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\13_3_1594635775.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/14_1594636188.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\14_1594636188.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/14_1_1594636191.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\14_1_1594636191.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/14_2_1594636193.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\14_2_1594636193.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/14_3_1594636195.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\14_3_1594636195.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/15_1594636400.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\15_1594636400.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/15_1_1594636402.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\15_1_1594636402.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/15_2_1594636404.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\15_2_1594636404.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/15_3_1594636407.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\15_3_1594636407.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/1_1594629788.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\1_1594629788.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/1_1_1594629794.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\1_1_1594629794.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/1_2_1594629796.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\1_2_1594629796.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/1_3_1594629797.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\1_3_1594629797.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/2_1594630017.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\2_1594630017.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/2_1_1594630020.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\2_1_1594630020.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/2_2_1594630022.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\2_2_1594630022.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/2_3_1594630024.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\2_3_1594630024.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/3_1594630191.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\3_1594630191.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/3_1_1594630194.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\3_1_1594630194.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/3_2_1594630195.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\3_2_1594630195.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/3_3_1594630197.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\3_3_1594630197.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/4_1594631052.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\4_1594631052.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/4_1_1594631054.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\4_1_1594631054.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/4_2_1594631057.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\4_2_1594631057.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/4_3_1594631060.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\4_3_1594631060.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/5_1594631249.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\5_1594631249.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/5_1_1594631252.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\5_1_1594631252.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/5_2_1594631254.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\5_2_1594631254.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/5_3_1594631257.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\5_3_1594631257.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/6_1594631642.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\6_1594631642.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/6_1_1594631647.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\6_1_1594631647.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/6_2_1594631649.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\6_2_1594631649.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/6_3_1594631650.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\6_3_1594631650.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/7_1594631822.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\7_1594631822.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/7_1_1594631825.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\7_1_1594631825.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/7_2_1594631828.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\7_2_1594631828.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/7_3_1594631830.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\7_3_1594631830.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/8_1594632009.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\8_1594632009.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/8_1_1594632012.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\8_1_1594632012.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/8_2_1594632014.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\8_2_1594632014.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/8_3_1594632016.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\8_3_1594632016.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/9_1594634307.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\9_1594634307.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/9_1_1594634310.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\9_1_1594634310.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/9_2_1594634312.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\9_2_1594634312.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/items/9_3_1594634315.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\items\9_3_1594634315.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/upload/dostavka_15946411434361.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\upload\dostavka_15946411434361.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/upload/novosti1_1_15946418999418.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\upload\novosti1_1_15946418999418.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/upload/novosti2_1_15946419925193.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\upload\novosti2_1_15946419925193.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/upload/o-kompanii_15946412970298.jpeg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\upload\o-kompanii_15946412970298.jpeg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/upload/stat-ya1_15946416205166.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\upload\stat-ya1_15946416205166.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/800x0/1018/upload/stat-ya2_15946417764321.jpg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\800x0\1018\upload\stat-ya2_15946417764321.jpg
+Content Type: image/jpeg
+
+Uri: https://new15945708035892.myaddshop.ru/img/main/close.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\main\close.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/no_img.png
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\no_img.png
+Content Type: image/png
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/facebook-fill.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\facebook-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/instagram-fill.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\instagram-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/odnoklassniki.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\odnoklassniki.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/telegram-fill.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\telegram-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/tiktok-fill.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\tiktok-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/viber-fill.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\viber-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/vk-fill.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\vk-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/whatsapp-fill.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\whatsapp-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/img/social/youtube-fill.svg
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\img\social\youtube-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-apple-iphone-11-128gb-black/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-apple-iphone-11-128gb-black\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-apple-iphone-11-64gb-white/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-apple-iphone-11-64gb-white\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-apple-iphone-11-pro-64gb/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-apple-iphone-11-pro-64gb\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-apple-iphone-11-pro-max-256gb/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-apple-iphone-11-pro-max-256gb\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-apple-iphone-xr-64gb-black/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-apple-iphone-xr-64gb-black\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-huawei-nova-5t-midsummer/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-huawei-nova-5t-midsummer\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-huawei-p30-breathing-crystal/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-huawei-p30-breathing-crystal\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-huawei-p30-lite-peacock/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-huawei-p30-lite-peacock\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-huawei-p40-black/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-huawei-p40-black\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-huawei-p40-lite-crush-green/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-huawei-p40-lite-crush-green\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-samsung-galaxy-a20-32gb/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-samsung-galaxy-a20-32gb\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-samsung-galaxy-a30s-black-32gb/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-samsung-galaxy-a30s-black-32gb\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-samsung-galaxy-a51-64gb/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-samsung-galaxy-a51-64gb\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-samsung-galaxy-s10-lite/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-samsung-galaxy-s10-lite\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/items/smartfon-samsung-galaxy-s20-gray/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\items\smartfon-samsung-galaxy-s20-gray\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/js/script-min.js
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\js\script-min.js
+Content Type: application/javascript
+
+Uri: https://new15945708035892.myaddshop.ru/js/swiper-min.js
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\js\swiper-min.js
+Content Type: application/javascript
+
+Uri: https://new15945708035892.myaddshop.ru/js/zoomer.js
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\js\zoomer.js
+Content Type: application/javascript
+
+Uri: https://new15945708035892.myaddshop.ru/kontakty/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\kontakty\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/login/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\login\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/manufacturers/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\manufacturers\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/manufacturers/apple/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\manufacturers\apple\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/manufacturers/huawei/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\manufacturers\huawei\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/manufacturers/samsung/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\manufacturers\samsung\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/modules/fontawesome/fa-free-v4-font-face.min.css
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\modules\fontawesome\fa-free-v4-font-face.min.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/modules/fontawesome/fa-free-v4-shims.min.css
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\modules\fontawesome\fa-free-v4-shims.min.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/modules/fontawesome/fa-free.min.css
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\modules\fontawesome\fa-free.min.css
+Content Type: text/css
+
+Uri: https://new15945708035892.myaddshop.ru/modules/fontawesome/free-fa-regular-400.woff2
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\modules\fontawesome\free-fa-regular-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://new15945708035892.myaddshop.ru/modules/fontawesome/free-fa-solid-900.woff2
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\modules\fontawesome\free-fa-solid-900.woff2
+Content Type: application/octet-stream
+
+Uri: https://new15945708035892.myaddshop.ru/news/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\news\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/news/operacionnye-sistemy/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\news\operacionnye-sistemy\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/news/smartfony-i-kommunikatory/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\news\smartfony-i-kommunikatory\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/o-kompanii/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\o-kompanii\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/politika-konfidencialnosti/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\politika-konfidencialnosti\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/registration/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\registration\index.htm
+Content Type: text/html
+
+Uri: https://new15945708035892.myaddshop.ru/soglasie-na-obrabotku-personalnyh-dannyh/
+File Name: C:\Users\Alex\Documents\copyWebsites\for Parashute\new15945708035892.myaddshop.ru\soglasie-na-obrabotku-personalnyh-dannyh\index.htm
+Content Type: text/html
+
