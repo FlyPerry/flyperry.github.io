@@ -2,7 +2,9 @@
 
 /** @var yii\web\View $this */
 
-/** @var string $content */
+/** @var string $content
+ ** @var array $categories
+ */
 
 use app\assets\AppAsset;
 use app\widgets\Alert;
@@ -10,6 +12,7 @@ use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 
@@ -19,6 +22,7 @@ $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, 
 $this->registerMetaTag(['name' => 'description', 'content' => $this->params['meta_description'] ?? '']);
 $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_keywords'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
+$categories = ['elektronka' => 'Электронные сиграреты', 'zhizha' => 'Жидкости', 'podiki' => 'Устройства']
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -33,13 +37,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <meta content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" name="viewport">
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <link rel="icon" type="image/png" href="img/64x64/1018/favicon/favikonka_15946435384164.png">
+    <link rel="icon" type="image/png" href="/img/64x64/1018/favicon/favikonka_15946435384164.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
 
-    <link href="css/framework7-icons.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="/css/framework7-icons.css" rel="stylesheet">
+    <link href="/css/swiper.css" rel="stylesheet" type="text/css">
     <style>
 
         :root {
@@ -68,9 +72,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
     </style>
 
-    <link href="css/shop/themes/base/style.css?ver=1711906659" rel="stylesheet" type="text/css">
-    <link href="css/shop/themes/templates/kanasi.css?ver=1710605584" rel="stylesheet" type="text/css">
-    <link href="css/shop/mobile.css?ver=1710279352" rel="stylesheet" type="text/css" media="(max-width: 1366px)">
+    <link href="/css/shop/themes/base/style.css?ver=1711906659" rel="stylesheet" type="text/css">
+    <link href="/css/shop/themes/templates/kanasi.css?ver=1710605584" rel="stylesheet" type="text/css">
+    <link href="/css/shop/mobile.css?ver=1710279352" rel="stylesheet" type="text/css" media="(max-width: 1366px)">
     <script>
         window.shop_currency = 'руб.';
         window.shop_id = '1018';
@@ -112,32 +116,32 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     <div class="categories">
                         <div class="mob-title"><i class="f7-icons">bars</i>Категории товаров</div>
                         <ul class="level_1">
-                            <li><a href="categories/s-emkoj-batareej" class="" title="С емкой батареей">С
+                            <li><a href="/categories/s-emkoj-batareej" class="" title="С емкой батареей">С
                                     емкой батареей</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-nokia" class="" title="Смартфоны Nokia">Смартфоны
+                                    <li><a href="/categories/smartfony-nokia" class="" title="Смартфоны Nokia">Смартфоны
                                             Nokia</a></li>
-                                    <li><a href="categories/smartfony-philips" class=""
+                                    <li><a href="/categories/smartfony-philips" class=""
                                            title="Смартфоны Philips">Смартфоны Philips</a></li>
-                                    <li><a href="categories/smartfony-bluefox" class=""
+                                    <li><a href="/categories/smartfony-bluefox" class=""
                                            title="Смартфоны BlueFox">Смартфоны BlueFox</a></li>
                                 </ul>
                             </li>
-                            <li><a href="categories/s-bolshim-ekranom" class="" title="С большим экраном">С
+                            <li><a href="/categories/s-bolshim-ekranom" class="" title="С большим экраном">С
                                     большим экраном</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-samsung" class=""
+                                    <li><a href="/categories/smartfony-samsung" class=""
                                            title="Смартфоны Samsung">Смартфоны Samsung</a></li>
-                                    <li><a href="categories/smartfony-huawei" class=""
+                                    <li><a href="/categories/smartfony-huawei" class=""
                                            title="Смартфоны Huawei">Смартфоны Huawei</a></li>
                                 </ul>
                             </li>
-                            <li><a href="categories/s-horoshej-kameroj" class="" title="С хорошей камерой">С
+                            <li><a href="/categories/s-horoshej-kameroj" class="" title="С хорошей камерой">С
                                     хорошей камерой</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-alcatel" class=""
+                                    <li><a href="/categories/smartfony-alcatel" class=""
                                            title="Смартфоны Alcatel">Смартфоны Alcatel</a></li>
-                                    <li><a href="categories/smartfony-apple" class="" title="Смартфоны Apple">Смартфоны
+                                    <li><a href="/categories/smartfony-apple" class="" title="Смартфоны Apple">Смартфоны
                                             Apple</a></li>
                                 </ul>
                             </li>
@@ -160,15 +164,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <div class="inner">
                 <div class="logo_wrapper">
                     <a href="/" class="logo">
-                        <img src="img/250x0/1018/logo/logo_15946433853734.png" alt="PARASHUT">
+                        <img src="/img/250x0/1018/logo/logo_15946433853734.png" alt="PARASHUT">
                     </a>
                 </div>
                 <div class="header_right">
 
                     <div class="phone">
-                        <a href="tel:84809537065">8-480-953-70-65</a>
-
-
+                        <a href="tel:+77074984312">+77074984312</a>
                     </div>
 
                     <div class="search_open">
@@ -195,35 +197,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 <div class="inner">
                     <div class="categories">
                         <ul class="level_1">
-                            <li><a href="categories/s-emkoj-batareej" class="" title="С емкой батареей">С
-                                    емкой батареей</a>
-                                <ul class="level_2">
-                                    <li><a href="categories/smartfony-nokia" class="" title="Смартфоны Nokia">Смартфоны
-                                            Nokia</a></li>
-                                    <li><a href="categories/smartfony-philips" class=""
-                                           title="Смартфоны Philips">Смартфоны Philips</a></li>
-                                    <li><a href="categories/smartfony-bluefox" class=""
-                                           title="Смартфоны BlueFox">Смартфоны BlueFox</a></li>
-                                </ul>
+                            <?php foreach ($categories as $category => $category_name): ?>
+                            <li>
+                            <?= Html::a($category_name,Url::to(['catalog/'.$category]),['title'=>$category_name])?>
                             </li>
-                            <li><a href="categories/s-bolshim-ekranom" class="" title="С большим экраном">С
-                                    большим экраном</a>
-                                <ul class="level_2">
-                                    <li><a href="categories/smartfony-samsung" class=""
-                                           title="Смартфоны Samsung">Смартфоны Samsung</a></li>
-                                    <li><a href="categories/smartfony-huawei" class=""
-                                           title="Смартфоны Huawei">Смартфоны Huawei</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="categories/s-horoshej-kameroj" class="" title="С хорошей камерой">С
-                                    хорошей камерой</a>
-                                <ul class="level_2">
-                                    <li><a href="categories/smartfony-alcatel" class=""
-                                           title="Смартфоны Alcatel">Смартфоны Alcatel</a></li>
-                                    <li><a href="categories/smartfony-apple" class="" title="Смартфоны Apple">Смартфоны
-                                            Apple</a></li>
-                                </ul>
-                            </li>
+                            <?php endforeach;?>
                         </ul>
                     </div>
                 </div>
