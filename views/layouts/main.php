@@ -112,32 +112,32 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     <div class="categories">
                         <div class="mob-title"><i class="f7-icons">bars</i>Категории товаров</div>
                         <ul class="level_1">
-                            <li><a href="categories/s-emkoj-batareej/index.htm" class="" title="С емкой батареей">С
+                            <li><a href="categories/s-emkoj-batareej" class="" title="С емкой батареей">С
                                     емкой батареей</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-nokia/index.htm" class="" title="Смартфоны Nokia">Смартфоны
+                                    <li><a href="categories/smartfony-nokia" class="" title="Смартфоны Nokia">Смартфоны
                                             Nokia</a></li>
-                                    <li><a href="categories/smartfony-philips/index.htm" class=""
+                                    <li><a href="categories/smartfony-philips" class=""
                                            title="Смартфоны Philips">Смартфоны Philips</a></li>
-                                    <li><a href="categories/smartfony-bluefox/index.htm" class=""
+                                    <li><a href="categories/smartfony-bluefox" class=""
                                            title="Смартфоны BlueFox">Смартфоны BlueFox</a></li>
                                 </ul>
                             </li>
-                            <li><a href="categories/s-bolshim-ekranom/index.htm" class="" title="С большим экраном">С
+                            <li><a href="categories/s-bolshim-ekranom" class="" title="С большим экраном">С
                                     большим экраном</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-samsung/index.htm" class=""
+                                    <li><a href="categories/smartfony-samsung" class=""
                                            title="Смартфоны Samsung">Смартфоны Samsung</a></li>
-                                    <li><a href="categories/smartfony-huawei/index.htm" class=""
+                                    <li><a href="categories/smartfony-huawei" class=""
                                            title="Смартфоны Huawei">Смартфоны Huawei</a></li>
                                 </ul>
                             </li>
-                            <li><a href="categories/s-horoshej-kameroj/index.htm" class="" title="С хорошей камерой">С
+                            <li><a href="categories/s-horoshej-kameroj" class="" title="С хорошей камерой">С
                                     хорошей камерой</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-alcatel/index.htm" class=""
+                                    <li><a href="categories/smartfony-alcatel" class=""
                                            title="Смартфоны Alcatel">Смартфоны Alcatel</a></li>
-                                    <li><a href="categories/smartfony-apple/index.htm" class="" title="Смартфоны Apple">Смартфоны
+                                    <li><a href="categories/smartfony-apple" class="" title="Смартфоны Apple">Смартфоны
                                             Apple</a></li>
                                 </ul>
                             </li>
@@ -185,7 +185,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                         </form>
                     </div>
                     <div class="basket">
-                        <a href="basket/index.htm">
+                        <a href="basket">
                             <i class="f7-icons">cart_fill</i>
                         </a>
                     </div>
@@ -195,32 +195,32 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 <div class="inner">
                     <div class="categories">
                         <ul class="level_1">
-                            <li><a href="categories/s-emkoj-batareej/index.htm" class="" title="С емкой батареей">С
+                            <li><a href="categories/s-emkoj-batareej" class="" title="С емкой батареей">С
                                     емкой батареей</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-nokia/index.htm" class="" title="Смартфоны Nokia">Смартфоны
+                                    <li><a href="categories/smartfony-nokia" class="" title="Смартфоны Nokia">Смартфоны
                                             Nokia</a></li>
-                                    <li><a href="categories/smartfony-philips/index.htm" class=""
+                                    <li><a href="categories/smartfony-philips" class=""
                                            title="Смартфоны Philips">Смартфоны Philips</a></li>
-                                    <li><a href="categories/smartfony-bluefox/index.htm" class=""
+                                    <li><a href="categories/smartfony-bluefox" class=""
                                            title="Смартфоны BlueFox">Смартфоны BlueFox</a></li>
                                 </ul>
                             </li>
-                            <li><a href="categories/s-bolshim-ekranom/index.htm" class="" title="С большим экраном">С
+                            <li><a href="categories/s-bolshim-ekranom" class="" title="С большим экраном">С
                                     большим экраном</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-samsung/index.htm" class=""
+                                    <li><a href="categories/smartfony-samsung" class=""
                                            title="Смартфоны Samsung">Смартфоны Samsung</a></li>
-                                    <li><a href="categories/smartfony-huawei/index.htm" class=""
+                                    <li><a href="categories/smartfony-huawei" class=""
                                            title="Смартфоны Huawei">Смартфоны Huawei</a></li>
                                 </ul>
                             </li>
-                            <li><a href="categories/s-horoshej-kameroj/index.htm" class="" title="С хорошей камерой">С
+                            <li><a href="categories/s-horoshej-kameroj" class="" title="С хорошей камерой">С
                                     хорошей камерой</a>
                                 <ul class="level_2">
-                                    <li><a href="categories/smartfony-alcatel/index.htm" class=""
+                                    <li><a href="categories/smartfony-alcatel" class=""
                                            title="Смартфоны Alcatel">Смартфоны Alcatel</a></li>
-                                    <li><a href="categories/smartfony-apple/index.htm" class="" title="Смартфоны Apple">Смартфоны
+                                    <li><a href="categories/smartfony-apple" class="" title="Смартфоны Apple">Смартфоны
                                             Apple</a></li>
                                 </ul>
                             </li>
@@ -231,7 +231,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         </div>
     </header>
 
-    <main id="main" class="flex-shrink-0" role="main">
+    <main>
         <div class="container">
             <?php if (!empty($this->params['breadcrumbs'])): ?>
                 <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
