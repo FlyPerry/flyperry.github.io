@@ -33,7 +33,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <meta content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" name="viewport">
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <link rel="icon" type="image/png" href="assets/img/64x64/1018/favicon/favikonka_15946435384164.png">
+    <link rel="icon" type="image/png" href="img/64x64/1018/favicon/favikonka_15946435384164.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -160,7 +160,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <div class="inner">
                 <div class="logo_wrapper">
                     <a href="/" class="logo">
-                        <img src="assets/img/250x0/1018/logo/logo_15946433853734.png" alt="PARASHUT">
+                        <img src="img/250x0/1018/logo/logo_15946433853734.png" alt="PARASHUT">
                     </a>
                 </div>
                 <div class="header_right">

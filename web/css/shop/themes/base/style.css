@@ -3292,39 +3292,39 @@ footer .bottom .footer_site_info a {
 }
 
 .social .link_vk {
-    background-image: url(../../../../assets/img/social/vk-fill.svg)
+    background-image: url(../../../../img/social/vk-fill.svg)
 }
 
 .social .link_fb {
-    background-image: url(../../../../assets/img/social/facebook-fill.svg)
+    background-image: url(../../../../img/social/facebook-fill.svg)
 }
 
 .social .link_ok {
-    background-image: url(../../../../assets/img/social/odnoklassniki.svg)
+    background-image: url(../../../../img/social/odnoklassniki.svg)
 }
 
 .social .link_instagram {
-    background-image: url(../../../../assets/img/social/instagram-fill.svg)
+    background-image: url(../../../../img/social/instagram-fill.svg)
 }
 
 .social .link_youtube {
-    background-image: url(../../../../assets/img/social/youtube-fill.svg)
+    background-image: url(../../../../img/social/youtube-fill.svg)
 }
 
 .social .link_whatsup {
-    background-image: url(../../../../assets/img/social/whatsapp-fill.svg)
+    background-image: url(../../../../img/social/whatsapp-fill.svg)
 }
 
 .social .link_telegram {
-    background-image: url(../../../../assets/img/social/telegram-fill.svg)
+    background-image: url(../../../../img/social/telegram-fill.svg)
 }
 
 .social .link_viber {
-    background-image: url(../../../../assets/img/social/viber-fill.svg)
+    background-image: url(../../../../img/social/viber-fill.svg)
 }
 
 .social .link_tiktok {
-    background-image: url(../../../../assets/img/social/tiktok-fill.svg);
+    background-image: url(../../../../img/social/tiktok-fill.svg);
     background-size: 70%
 }
 
@@ -3536,7 +3536,7 @@ footer .bottom .footer_site_info a {
     height: 15px;
     color: var(--mainSchemeColor);
     cursor: pointer;
-    background: url(../../../../assets/img/main/close.svg) no-repeat center;
+    background: url(../../../../img/main/close.svg) no-repeat center;
     background-size: 100%
 }
 

@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url(../../../../assets/fonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc9.ttf) format('truetype')
+    src: url(../../../../s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc9.ttf) format('truetype')
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(../../../../assets/fonts/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxP.ttf) format('truetype')
+    src: url(../../../../s/roboto/v30/KFOmCnqEu92Fr1Mu5mxP.ttf) format('truetype')
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(../../../../assets/fonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc9.ttf) format('truetype')
+    src: url(../../../../s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc9.ttf) format('truetype')
 }
 
 @font-face {
@@ -27,7 +27,7 @@
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url(../../../../assets/fonts/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjtGyI.ttf) format('truetype')
+    src: url(../../../../s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjtGyI.ttf) format('truetype')
 }
 
 @font-face {
@@ -35,7 +35,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(../../../../assets/fonts/s/ubuntu/v20/4iCs6KVjbNBYlgoKew7z.ttf) format('truetype')
+    src: url(../../../../s/ubuntu/v20/4iCs6KVjbNBYlgoKew7z.ttf) format('truetype')
 }
 
 @font-face {
@@ -43,7 +43,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(../../../../assets/fonts/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jtGyI.ttf) format('truetype')
+    src: url(../../../../s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jtGyI.ttf) format('truetype')
 }
 
 :root {
