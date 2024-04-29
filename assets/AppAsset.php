@@ -28,8 +28,9 @@ class AppAsset extends AssetBundle
             'src' => 'js/feather.min.js',
             'type' => 'module',
         ],
-        'js/script-min.js',
-        'js/swiper-min.js',
+        ['src' => 'js/script-min.js', 'type' => 'text/javascript'], // Добавляем скрипт сюда
+        ['src' => 'js/swiper-min.js', 'type' => 'text/javascript'], // Добавляем скрипт сюда
+        ['src' => 'js/swiper-min.js', 'type' => 'module'], // Добавляем скрипт сюда
         'js/zoomer.js',
     ];
     public $depends = [
