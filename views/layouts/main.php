@@ -84,7 +84,6 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
         window.item_img_zoom = '1';
         window.promo_discount = null;
         window.promo_title = null;
-        window.one_click_buy = 1;
 
     </script>
 

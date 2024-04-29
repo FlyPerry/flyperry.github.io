@@ -8,15 +8,24 @@ use yii\web\View;
 
 ?>
 <script>
+    window.item = {};
+    window.item.id = <?=$item->id;?>;
+    window.item.price = <?=$item->amount?>;
 
+    // window.basket = {}
+    window.item.vendor_code = <?=$item->id;?>;
+    window.item.step = 1.00;
+    window.item.max_in_order = <?=$item->inStock;?>;
+    window.item.min_in_order = 1.00;
 </script>
 <?= Html::tag('H1', $item->itemName, ['class' => 'item_title']) ?>
 
 <div class="item_preview">
     <div class="right_top">
         <div class="code v_code">ID товара:
-            <span class="vendor_or_id"><?= str_pad($item->id, 5, '0', STR_PAD_LEFT); ?></span>
+            <span class="vendor_or_id"><?= $item->id; ?></span>
         </div>
+
         <div class="availability exist"><?= $item->inStock > 0 ? 'В наличии' : 'Нет на складе'; ?></div>
     </div>
 </div>
@@ -140,7 +149,7 @@ use yii\web\View;
                 <div class="prop_title">Производитель</div>
                 <div class="separator_tabulator"></div>
                 <div class="prop_val">
-                    <a href="../../manufacturers/apple/index.htm">Apple</a>
+                    <a href="/categories/">Apple</a>
                 </div>
             </div>
             <div class="prop_row">
@@ -194,3 +203,8 @@ use yii\web\View;
         </div>
     </div>
 </div>
+
+<?php
+$js = "$('.pop_up_price').text('213')";
+$this->registerJs($js,View::POS_LOAD);
+?>

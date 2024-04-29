@@ -1,4 +1,4 @@
-$(function () {
+$(function ()   {
     var App;
     window.userEventHandler = function (event, data = {}) {
         for (var i in console.log("event:" + event), "undefined" != typeof VK && (console.log("vk pixel event: " + event), VK.Retargeting.Event(event)), "undefined" != typeof fbq && (console.log("fb pixel event: " + event), fbq("trackCustom", event)), window) if (new RegExp(/yaCounter/).test(i)) {
@@ -11,36 +11,29 @@ $(function () {
             eventAction: "Add"
         }), "order" == event && ga("send", {hitType: "event", eventCategory: "Items", eventAction: "Order"})), !0
     }, window.addshop = (App = {
-        version: "0.02", basket: {
+        version: "0.02",
+        basket: {
             status: 0, storage_name: "addshop_basket", getData: function () {
                 var t = JSON.parse(localStorage.getItem(this.storage_name));
                 return null == t ? [] : t
-            }, getItem: function (t) {
+            },
+            getItem: function (t) {
                 var e = this.getData(), i = {};
                 return $.each(e, function (e, a) {
                     e == t && (i = a)
                 }), i
-            }, saveData: function (t) {
+            },
+            saveData: function (t) {
                 try {
                     localStorage.setItem(this.storage_name, JSON.stringify(t))
                 } catch (t) {
                     t == QUOTA_EXCEEDED_ERR && alert("Ошибка добавления номера в корзину.")
                 }
-            }, clean: function () {
+            },
+            clean: function () {
                 this.saveData([])
-            }, countItems: function () {
-                return this.getData().length
-            }, countTotalSum: function () {
-                var t = 0;
-                return $.each(this.getData(), function (e, i) {
-                    t += i.price * i.quantity
-                }), t
-            }, countTotalSumSale: function () {
-                var t = 0;
-                return $.each(this.getData(), function (e, i) {
-                    0 != i.discount ? "percent" == i.discount_type ? t += i.price * i.quantity * (1 - i.discount / 100) : t += i.quantity * (i.price - i.discount) : window.customer_discount ? t += i.price * i.quantity * (1 - window.customer_discount / 100) : window.promo_discount ? t += i.price * i.quantity * (1 - window.promo_discount / 100) : t += i.price * i.quantity
-                }), t
-            }, addItem: function (t) {
+            },
+            addItem: function (t) {
                 var e = this.getData(), i = !1;
                 $.each(e, function (a, n) {
                     n.offer_id == t.offer_id && (i++, e[a].quantity = 1 * e[a].quantity, e[a].quantity += 1 * t.quantity)
@@ -56,46 +49,19 @@ $(function () {
                         }
                     }
                 })), this.saveData(e)
-            }, replaceItemByIndex: function (t, e) {
+            },
+            replaceItemByIndex: function (t, e) {
                 var i = this.getData();
                 i.splice(e, 1, t), this.saveData(i)
-            }, removeItemByIndex: function (t) {
+            },
+            removeItemByIndex: function (t) {
                 var e = this.getData();
                 e.splice(t, 1), this.saveData(e), $(".pop_up_price").remove()
-            }, numberWithCommas: function (t) {
+            },
+            numberWithCommas: function (t) {
                 return t.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
-            }, getPromoTitle: function (t) {
-                var e = this.getData(), i = "";
-                return $.each(e, function (e, a) {
-                    e == t && (i = a.promo_title)
-                }), i
-            }, renderBasket: function () {
-                var t = this.getData(), e = App.basket.countTotalSum(), i = App.basket.countTotalSumSale(), a = "",
-                    n = "", s = window.customer_discount, o = parseFloat(1 - s / 100), c = "";
-                return $.each(t, function (t, e) {
-                    var r = "", l = "";
-                    if (0 != e.discount) if ("percent" == e.discount_type) var d = 1 - parseFloat(e.discount) / 100; else d = parseFloat(e.discount);
-                    if (window.promo_discount && e.promo_used && $(".promo-descr").text("Вы уже использовали купон на скидку!"), window.promo_discount && !e.promo_used) {
-                        var p = window.promo_discount, u = window.promo_title, m = parseFloat(1 - p / 100);
-                        $(".promo-descr").text("Вы использовали купон " + u + " на скидку " + p + "%"), e.discount = p, e.promo_used = !0, e.promo_title = u, e.discount_type = "percent", App.basket.replaceItemByIndex(e, t)
-                    }
-                    var v = parseFloat(e.price * e.quantity).toFixed(2), _ = parseFloat(e.price).toFixed(2),
-                        h = parseFloat(e.quantity).toFixed(2), f = parseFloat(e.step).toFixed(2),
-                        b = parseFloat(e.max).toFixed(2), g = "";
-                    if (p) c = "discount_exist", l = "discount_exist", g = App.basket.numberWithCommas(parseFloat(e.price * e.quantity * m).toFixed(2)) + " " + shop_currency, r = (m * _).toFixed(2) + " " + shop_currency; else if (0 != d && d < 1 || d > 0 && "" != e.discount_type) switch (l = "discount_exist", c = "discount_exist", e.discount_type) {
-                        case"percent":
-                            g = App.basket.numberWithCommas(parseFloat(e.price * e.quantity * d).toFixed(2)) + " " + shop_currency, r = (_ * d).toFixed(2) + " " + shop_currency;
-                            break;
-                        case"absolute":
-                            g = App.basket.numberWithCommas(parseFloat((e.price - d) * e.quantity).toFixed(2)) + " " + shop_currency, r = (_ - d).toFixed(2) + " " + shop_currency
-                    } else s ? (c = "discount_exist", l = "discount_exist", g = App.basket.numberWithCommas(parseFloat(e.price * e.quantity * o).toFixed(2)) + " " + shop_currency, r = (_ * o).toFixed(2) + " " + shop_currency) : g = "";
-                    0;
-                    var y = "";
-                    null != e.vendor_code && (y = `Код товара: ${e.vendor_code}`);
-                    var w = "";
-                    null != e.offer_title && (w = `${e.offer_title}`), n += `\n\t\t\t\t\t\t<div class="basket_item_wrapp">\n\t\t\t\t\t\t<div class="item_in_basket_titles">\n\t\t\t\t\t\t\t\t\t<div class="title">Наименование товара</div>\n\t\t\t\t\t\t\t\t\t<div class="img"></div>\n\t\t\t\t\t\t\t\t\t<div class="price">Цена</div>\n\t\t\t\t\t\t\t\t\t<div class="quantity">Количество</div>\n\t\t\t\t\t\t\t\t\t<div class="total">Стоимость</div>\n\t\t\t\t\t\t\t\t\t<div class="remove" data-index="${t}"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class="item_in_basket">\n\t\t\t\t\t\t\t\t\t<div class="image"><img src="${e.image}" /></div>\n\t\t\t\t\t\t\t\t\t<div class="title"><a href="${e.link}">${e.title}</a><br><span class="v_code">${y}</span> <span class="v_code">${w}</span> </div>\n\t\t\t\t\t\t\t\t\t<div class="price"><div>${r} </div><span class="${l}">${_} ${shop_currency}<span></div>\n\t\t\t\t\t\t\t\t\t<div class="quantity">\n\t\t\t\t\t\t\t\t\t\t<div class="count">\n\t\t\t\t\t\t\t\t\t\t\t<div class="count_minus">-</div>\n\t\t\t\t\t\t\t\t\t\t\t<input  data-index="${t}" type="text" name="quantity" class="number_input" value="${h}" min="${f}"  step="${f}" max="${b}">\n\t\t\t\t\t\t\t\t\t\t\t<div class="count_plus">+</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class="total"><div class="total_new">${g}</div><span class="${l}">${App.basket.numberWithCommas(v)} ${shop_currency}</span></div>\n\t\t\t\t\t\t\t\t\t<div class="">  </div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>`, (p || s || d) && (a = i.toFixed(2))
-                }), n = "" == n ? "Нет товаров." : "" + n + `<div class="basket_end">                        \n\t\t\t\t\t\t\t<div class="left">\n\t\t\t\t\t\t\t\t<div class="promo">\n\t\t\t\t\t\t\t\t<form method="POST" id="apply_promo">\n\t\t\t\t\t\t\t\t\t<input name="action" type="hidden" value="apply_promo" />\n\t\t\t\t\t\t\t\t\t<input type="text" name="promo" class="promo" value="" placeholder="Введите промокод ..." />\n\t\t\t\t\t\t\t\t\t<button class="get_promo">Применить</button>\n\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class="right">\n\t\t\t\t\t\t\t\t<div class="total_basket_wrapp"><span>Итоговая сумма: </span><span id="basket_total"><span class="${c}">${App.basket.numberWithCommas(e.toFixed(2))}</span> &nbsp;${App.basket.numberWithCommas(a)}</span> ${shop_currency}</div>\n\t\t\t\t\t\t\t\t<a class="checkout_btn" href="/checkout/">Оформить заказ</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>`, $("#basket_list").html(n), !0
-            }, renderfloatBasketList: function () {
+            },
+            renderfloatBasketList: function () {
                 var t = this.getData(), e = parseFloat(window.customer_discount), i = 0, a = "", n = 1 - e / 100, s = 0,
                     o = 0, c = "", r = "", l = 0;
                 e && (r = "discount_exist"), $.each(t, function (t, c) {
@@ -111,52 +77,51 @@ $(function () {
                 d = 0 == s ? '<div class="itogo">\n\t\t\t\t\t\t\t<div class="total">Ваша корзина пуста</div>\n\t\t\t\t\t\t</div>' : `<div class="itogo">\n\t\t\t\t\t\t\t\t<div class="total">Итого: <span class="${r}">${App.basket.numberWithCommas(o.toFixed(2))}</span>&nbsp; ${App.basket.numberWithCommas(c)} ${shop_currency}</div>\n\t\t\t\t\t\t\t\t<div class="btns"><a href="/basket/">Корзина</a> <a href="/checkout/">Оформить</a></div>\n\t\t\t\t\t\t\t</div>`, $("#basket_popup_list").remove(), $("body").append(`<div id="basket_popup_list" class="${template_class}">\n\t\t\t\t\t\t\t\t\t<div class="close">&#10005;</div>\n\t\t\t\t\t\t\t\t\t<div class="items">${a}</div>\n\t\t\t\t\t\t\t\t  ${d}\n\t\t\t\t\t\t\t\t</div>`);
                 var p = ($("body").outerWidth() - $(".inner").outerWidth()) / 2 + "px";
                 return $("#basket_popup_list").css("right", p), "kanasi" == template_class ? $(".basket").append(`<div class="pop_up_price">${parseInt(s)} ${shop_currency}</div>`) : "taymyr" == template_class ? ($(".basket .icon_cont").append(`<div class="pop_up_price">${parseInt(s)} ${shop_currency}</div>`), $(".basket a").append(`<div class="pop_up_count">${l}</div>`)) : "simple" != template_class && "mirror" != template_class && "michigan" != template_class && "superior" != template_class || $(".basket a").append(`<div class="pop_up_count">${l}</div>`), !0
-            }, renderPopupBasket: function () {
-                var t = this.getData(), e = parseFloat(window.customer_discount), i = "", a = 0, n = 0, s = 0, o = "",
-                    c = "", r = "";
-                return $.each(t, function (t, o) {
-                    if (0 != o.discount) if (n = o.discount, "percent" === o.discount_type) var l = 1 - parseFloat(o.discount) / 100; else if ("absolute" === o.discount_type) l = n;
-                    var d = parseFloat(o.price).toFixed(2), p = (d * (1 - e / 100).toFixed(2)).toFixed(2);
-                    if ("percent" === o.discount_type) var u = (d * l).toFixed(2),
-                        m = parseFloat(o.price * o.quantity).toFixed(2); else if ("absolute" === o.discount_type) u = (d - l).toFixed(2), m = parseFloat((o.price - o.discount) * o.quantity).toFixed(2);
-                    var v = parseFloat(o.quantity).toFixed(2);
-                    l && l < 1 || l && "absolute" == o.discount_type ? (r = "discount_exist", c = `<div class="price_new">Цена со скидкой: ${App.basket.numberWithCommas(u)} ${shop_currency}</div>`) : e ? (r = "discount_exist", c = `<div class="price_new">Цена со скидкой: ${p} ${shop_currency}</div>`) : c = "", 0, i += `<div class="item_in_basket">\n\t\t\t\t\t\t\t\t<a href="${o.link}">\n\t\t\t\t\t\t\t\t\t<div class="image"><img src="${o.image}" /></div>\n\t\t\t\t\t\t\t\t\t<div class="descr">\n\t\t\t\t\t\t\t\t\t\t<div class="title">${o.title}</div>\n\t\t\t\t\t\t\t\t\t\t<div class="quantity">Количество: ${v}</div>\n\t\t\t\t\t\t\t\t\t\t<div class="price">Цена: ${App.basket.numberWithCommas(d)} ${shop_currency}</div>\n\t\t\t\t\t\t\t\t\t\t${c}\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</div>`, s += parseFloat(m), l && l < 1 ? m *= l : e && (m *= 1 - e / 100), a += parseFloat(m)
-                }), (window.customer_discount || n) && (o = a.toFixed(2)), $("#basket_popup_wrapper").remove(), $("body").addClass("modal"), $("body").append(`<div id="basket_popup_wrapper"><div id="basket_popup">\n\t\t\t\t\t\t\t\t\t<div class="close">&#10005;</div>\n\t\t\t\t\t\t\t\t\t<div class="items">${i}</div>\n\t\t\t\t\t\t\t\t\t<div class="itogo">\n\t\t\t\t\t\t\t\t\t\t<div class="total">Итого: <span class="${r}">${App.basket.numberWithCommas(s.toFixed(2))} </span>&nbsp; ${App.basket.numberWithCommas(o)} ${shop_currency}</div>\n\t\t\t\t\t\t\t\t\t\t<div class="btns"><a href="/basket/">Корзина</a> <a href="/checkout/">Оформить</a></div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div></div>`), !0
-            }
-        }, storage: {
+            },
+        },
+        storage: {
             status: 0, storage_name: "addshop_common", getData: function () {
                 var t = JSON.parse(sessionStorage.getItem(this.storage_name));
                 return null == t ? {} : t
-            }, saveData: function (t) {
+            },
+            saveData: function (t) {
                 try {
                     return sessionStorage.setItem(this.storage_name, JSON.stringify(t)), !0
                 } catch (t) {
                     return t == QUOTA_EXCEEDED_ERR && alert("Ошибка добавления в хранилище."), !1
                 }
-            }, clean: function () {
+            },
+            clean: function () {
                 return this.saveData({}), !0
-            }, setProp: function (t, e) {
+            },
+            setProp: function (t, e) {
                 var i = this.getData();
                 return i[t] = e, this.saveData(i), !0
-            }, setProps: function (t) {
+            },
+            setProps: function (t) {
                 var e = this.getData();
                 return $.extend(e, t), this.saveData(e), !0
-            }, removeProp: function (t) {
+            },
+            removeProp: function (t) {
                 var e = this.getData();
                 return delete e[t], this.saveData(e), !0
             }, getProp: function (t) {
                 return this.getData()[t] || ""
             }
-        }, checkDropdownMenu: function () {
+        },
+        checkDropdownMenu: function () {
             $(".menu_collapse_1 .level_1 .level_2").before('<div class="chevron_down"><i class="chevron_down_icon"></i></div>')
-        }, renderFavorites: function () {
+        },
+        renderFavorites: function () {
             var t = App.storage.getProp("favorites") || [];
             $("#favorites_list").html(""), 0 == t.length && $("#favorites_list").html("Пока тут пусто."), $.each(t, function (e) {
                 $("#favorites_list").append(`<div class="item_favorites"><img class="image" src="${t[e].image}" /><a class="title" href="${t[e].link}">${t[e].title}</a><span class="price">${t[e].price} ${shop_currency}</span> <span class="remove" data-index="${e}"><i class="fas fa-trash-alt"></i></span></div>`)
             })
-        }, setCookieSimple: function (t, e) {
+        },
+        setCookieSimple: function (t, e) {
             document.cookie = t + "=" + (e || "")
-        }, setCookie: function (t, e, i) {
+        },
+        setCookie: function (t, e, i) {
             var a = (i = i || {}).expires;
             if ("number" == typeof a && a) {
                 var n = new Date;
@@ -170,15 +135,8 @@ $(function () {
                 !0 !== c && (s += "=" + c)
             }
             document.cookie = s
-        }, getCookie: function (t) {
-            var e = document.cookie.match(new RegExp("(?:^|; )" + t.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"));
-            return e ? decodeURIComponent(e[1]) : void 0
-        }, getView: function () {
-            if (null !== localStorage.getItem("view")) {
-                var t = localStorage.getItem("view");
-                $("body").addClass(t), $(".show_style div").removeClass("active"), $(".show_style ." + t).addClass("active")
-            }
-        }, itemSC: function (t) {
+        },
+        itemSC: function (t) {
             var e, i, a = 0, n = 0, s = (t = $(t), new Swiper(".gallery-top", {}));
             if (t.hasClass("color")) {
                 var o = !1;
@@ -243,9 +201,11 @@ $(function () {
                     }
                 })
             }
-        }, stringFind: function (t, e) {
+        },
+        stringFind: function (t, e) {
             return -1 != t.search(e)
-        }, eventListener: function () {
+        },
+        eventListener: function () {
             if (App.checkDropdownMenu(), setTimeout(function () {
                 !function () {
                     let t = document.getElementById("menu-toggler");
@@ -311,38 +271,6 @@ $(function () {
                         $(this).hasClass("disabled") || ($(this).hasClass("active") || ($(".size").removeClass("active"), $(this).addClass("active")), App.itemSC(this))
                     })
                 }
-                $("body").on("submit", 'form[action="/basket/add/"]', function (t) {
-                    if (t.preventDefault(), !$(".item_price").hasClass("disable")) {
-                        var e = $(this).find('[name="quantity"]').eq(0).val(),
-                            i = $(this).find('[name="quantity"]').attr("step"),
-                            a = $(this).find('[name="quantity"]').eq(0).data("min"),
-                            n = $(this).find('[name="quantity"]').eq(0).data("max");
-                        if (e < a && (e = a), e > n && (e = n), 0 == e || isNaN(e)) 0 == $(".item_preview .count .invalid").length ? $(".item_preview .count").append('<span class="invalid" style="color:red;  font-size: 12px;">Некорректное значение поля</span>') : $(".item_preview .count .invalid").text("Некорректное значение поля"); else {
-                            $(".item_preview .invalid").remove(), 1 == i && (e = parseInt(e));
-                            var s = $(this).parents(".item").find(".item_price").data("discount") || $(".item_price").data("discount");
-                            "0.00" == s && (s = 0);
-                            var o = "";
-                            null != $(".item_preview .size.active").eq(0).text() && (o = $(".item_preview .size.active").eq(0).text()), null != $(".item_preview .color.active .color_view").eq(0).attr("title") && (o += " " + $(".item_preview .color.active .color_view").eq(0).attr("title"));
-                            var c = {
-                                title: $("h1").eq(0).text(),
-                                vendor_code: $(".item_preview .vendor_or_id").eq(0).text(),
-                                offer_title: o,
-                                image: $(".extra_image").find("img").eq(0).attr("src"),
-                                offer_id: $(this).find('[name="offer_id"]').eq(0).val(),
-                                quantity: e,
-                                price: $(this).find('[name="price"]').eq(0).val(),
-                                max: $(this).find('[name="max"]').eq(0).val(),
-                                min: $(this).find('[name="min"]').eq(0).val(),
-                                step: $(this).find('[name="step"]').eq(0).val(),
-                                discount: s,
-                                discount_type: $(".item_price").data("discount-type"),
-                                promo_used: !1,
-                                link: window.location.pathname
-                            };
-                            c.link.includes("categories") && (c.title = $(this).parents(".item").find(".descr").text(), c.vendor_code = $(this).parents(".item").data("code"), c.image = $(this).parents(".item").find("img").eq(0).attr("src"), c.link = $(this).parents(".item").find(".descr a").attr("href"), c.discount = $(this).parents(".item").data("discount"), c.discount_type = $(this).parents(".item").data("discount-type"), $(this).parents(".item").data("size") && 0 !== $(this).parents(".item").data("size") && (c.offer_title = $(this).parents(".item").data("size")), $(this).parents(".item").data("color") && 0 !== $(this).parents(".item").data("color") && (c.offer_title += " " + $(this).parents(".item").data("color"))), console.log(c), App.basket.addItem(c), App.basket.renderfloatBasketList(), App.basket.renderPopupBasket()
-                        }
-                    }
-                })
             }
             switch ($("body").on("click", ".show_style div", function (t) {
                 $(".show_style div").removeClass("active"), $(this).addClass("active"), $(".items").removeClass("list grid");
@@ -500,13 +428,8 @@ $(function () {
             }), "/basket/" == window.location.pathname && (App.basket.renderBasket(), $("#basket_list").on("click", ".basket_item_wrapp .remove", function () {
                 var t = $(this).data("index");
                 App.basket.removeItemByIndex(t), App.basket.renderBasket(), App.basket.renderfloatBasketList()
-            }), $("#basket_list").on("click", ".count_minus, .count_plus", function () {
-                var t = $(this).parent().find('input[name="quantity"]'), e = 1 * t.attr("max"), i = 1 * t.attr("min"),
-                    a = 1 * t.attr("step"), n = 1 * t.val();
-                n > 0 && $(".count .invalid").remove(), $(this).hasClass("count_minus") ? n > i ? n -= a : alert("Минимальное количество для заказа " + i) : n < e ? n += a : alert("Максимальное количество для заказа " + e), n <= 0 && (n = 0), n < i && (n = i), n >= e && (n = e);
-                var s = t.data("index"), o = App.basket.getItem(s);
-                o.quantity = n, App.basket.replaceItemByIndex(o, s), App.basket.renderBasket(), App.basket.renderfloatBasketList()
-            })), "/favorites/" == window.location.pathname && (App.renderFavorites(), $("#favorites_list").on("click", ".remove", function () {
+            })),
+            "/favorites/" == window.location.pathname && (App.renderFavorites(), $("#favorites_list").on("click", ".remove", function () {
                 var t = $(this).data("index"), e = App.storage.getProp("favorites") || [];
                 e.splice(t, 1), App.storage.setProp("favorites", e), App.renderFavorites()
             })), App.basket.renderfloatBasketList(), $("body").on("mouseleave", "#basket_popup_list", function (t) {
@@ -527,13 +450,6 @@ $(function () {
                     n = 1 * $(this).val();
                 $(".total_price .total").html(App.basket.numberWithCommas((e * n).toFixed(2)) + " " + shop_currency)
                     , window.customer_discount ? $(".total_price .total_new").html(App.basket.numberWithCommas((i * n).toFixed(2)) + " " + shop_currency) : window.item_discount && $(".total_price .total_new").html(App.basket.numberWithCommas((a * n).toFixed(2)) + " " + shop_currency)
-            }), $("body").on("click", ".item_price .count_minus, .item_price .count_plus, .item .count_minus, .item .count_plus", function () {
-                var t = $(this).parent().find('input[name="quantity"]'),
-                    e = $(this).parent().parent().find('input[name="price"]'), i = 1 * t.attr("max"),
-                    a = 1 * t.attr("step"), n = 1 * t.val(), s = 1 * e.val();
-                if ("absolute" == window.discount_type) o = e.val() - window.item_discount; else var o = e.val() * (1 - window.item_discount / 100);
-                var c = e.val() * (1 - window.customer_discount / 100);
-                $(this).hasClass("count_minus") ? n > window.item.min_in_order ? n -= a : alert("Минимальное количество для заказа ", window.item.min_in_order) : n < window.item.max_in_order ? n += a : alert("Максимальное количество для заказа ", window.item.max_in_order), n <= 0 && (n = 0), n >= i && (n = i), n <= window.item.min_in_order && (n = window.item.min_in_order), n >= window.item.max_in_order && (n = window.item.max_in_order), t.val(n), $(".total_price .total").html(App.basket.numberWithCommas((s * n).toFixed(2)) + " " + shop_currency), window.item_discount ? $(".total_price .total_new").html(App.basket.numberWithCommas((o * n).toFixed(2)) + " " + shop_currency) : window.customer_discount && $(".total_price .total_new").html(App.basket.numberWithCommas((c * n).toFixed(2)) + " " + shop_currency)
             }), $("body").on("click", ".add_favorite", function () {
                 var t = $(this).data("id"), e = $(this).data(), i = App.storage.getProp("favorites") || [], a = 0;
                 if ($(this).hasClass("active")) {
@@ -592,7 +508,8 @@ $(function () {
                     }, 500)
                 })
             }
-        }, init: function () {
+        },
+        init: function () {
             App.eventListener()
         }
     }, App.init(), App)
