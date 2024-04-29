@@ -99,10 +99,10 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
                 <div class="center menu">
                     <ul id="menu_list">
                         <li class="catalog_title li"><a href="categories">Каталог</a></li>
-                        <li class="li"><a href="o-kompanii" class="" title="О компании">О компании</a></li>
-                        <li class="li"><a href="dostavka-i-oplata" class="" title="Доставка и оплата">Доставка
+                        <li class="li"><a href="/o-kompanii" class="" title="О компании">О компании</a></li>
+                        <li class="li"><a href="/dostavka-i-oplata" class="" title="Доставка и оплата">Доставка
                                 и оплата</a></li>
-                        <li class="li"><a href="kontakty" class="" title="Контакты">Контакты</a></li>
+                        <li class="li"><a href="/kontakty" class="" title="Контакты">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="mob_menu">
@@ -210,12 +210,17 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
     </header>
 
     <main>
-        <div class="container">
+        <div class="block main">
+            <div class="inner">
+                <div class="content nositebar ">
+
             <?php if (!empty($this->params['breadcrumbs'])): ?>
                 <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
             <?php endif ?>
             <?= Alert::widget() ?>
             <?= $content ?>
+                </div>
+            </div>
         </div>
     </main>
 
