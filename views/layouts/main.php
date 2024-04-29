@@ -98,7 +98,7 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
             <div class="inner">
                 <div class="center menu">
                     <ul id="menu_list">
-                        <li class="catalog_title li"><a href="categories">Каталог</a></li>
+                        <li class="catalog_title li"><a href="/categories">Каталог</a></li>
                         <li class="li"><a href="/o-kompanii" class="" title="О компании">О компании</a></li>
                         <li class="li"><a href="/dostavka-i-oplata" class="" title="Доставка и оплата">Доставка
                                 и оплата</a></li>
@@ -187,7 +187,7 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
                         </form>
                     </div>
                     <div class="basket">
-                        <a href="basket">
+                        <a href="/basket">
                             <i class="f7-icons">cart_fill</i>
                         </a>
                     </div>
@@ -224,15 +224,121 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
         </div>
     </main>
 
-    <footer id="footer" class="mt-auto py-3 bg-light">
-        <div class="container">
-            <div class="row text-muted">
-                <div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
-                <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
+
+
+    <footer class="block">
+        <div class="top">
+            <div class="inner">
+                <div class="fmenu">
+                    <div class="logo_wrapper">
+                        <a class="logo" href="/">
+                            <img src="/img/250x0/1018/logo/logo_15946433853734.png" alt="ТелеБит">
+                        </a>
+                    </div>
+                    <div class="copyright">&copy;
+                        2024
+                        PARASHUT
+                    </div>
+                    <a class="policy" href="/politika-konfidencialnosti">Политика конфиденциальности</a>
+                    <a class="user_agreement_link" href="/soglasie-na-obrabotku-personalnyh-dannyh">Согласие на
+                        обработку персональных данных</a>
+                    <div class="footer_site_info">
+                        <p>Используя данный сайт, вы автоматически принимаете условия пользовательского соглашения и
+                            соглашаетесь с политикой конфиденциальности.</p>
+                    </div>
+                </div>
+                <div class="fmenu">
+                    <div class="footer_subtitle">О магазине</div>
+                    <ul>
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
+                        <li>
+                            <a href="/o-kompanii">О компании</a>
+                        </li>
+                        <li>
+                            <a href="/dostavka-i-oplata">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="/kontakty">Контакты</a>
+                        </li>
+                        <li>
+
+                            <a href="/news" class="" title="Новости">Новости</a>
+                        </li>
+                        <li>
+                            <a href="/articles" class="" title="Статьи">Статьи</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="fmenu catalog">
+                    <div class="footer_subtitle">Каталог</div>
+                    <ul>
+                        <?php foreach ($categories as $category => $category_name): ?>
+                            <li>
+                                <?= Html::a($category_name,Url::to(['catalog/'.$category]),['title'=>$category_name])?>
+                            </li>
+                        <?php endforeach;?>
+                    </ul>
+
+                </div>
+                <div class="fmenu contact_us">
+                    <div class="footer_subtitle">Свяжитесь с нами</div>
+                    <div class="address">101000, г.Москва, ул. Пушкина, Колотушкино 20, п. 1</div>
+                    <div>
+                        <span class="mail_span">E-mail:</span>
+                        <a href="mailto:01.alexsandr.46@gmail.com">01.alexsandr.46@gmail.com</a>
+                    </div>
+
+                    <a class="footer_phone" href="tel:+77074984312">+77074984312</a>
+
+
+                    <div class="social">
+                        <a target="_blank" href="https://telegram.me/flip1124z" class="link_telegram"></a>
+                        <a target="_blank" href="https://instagram.com/a.polyakov_776" class="link_instagram"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <script src="/jquery-3.6.0.min.js"></script>
+    <script src="/npm/feather-icons/dist/feather.min.js" type="module"></script>
+    <script>$(function () {
+            feather.replace();
+        });</script>
+    <script src="/js/swiper-min.js" type="text/javascript" type="module"></script>
+    <script src="/js/script-min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/modules/fontawesome/fa-free-v4-font-face.min.css">
+    <link rel="stylesheet" href="/modules/fontawesome/fa-free-v4-shims.min.css">
+    <link rel="stylesheet" href="/modules/fontawesome/fa-free.min.css">
+
+
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 5000,
+                },
+                resizeReInit: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                noSwipingClass: 'noSwipingClass'
+            });
+
+
+        });
+
+    </script>
     <?php $this->endBody() ?>
 </div>
 </body>
