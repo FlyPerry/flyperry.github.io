@@ -75,8 +75,9 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
     <link href="/css/shop/themes/base/style.css?ver=1711906659" rel="stylesheet" type="text/css">
     <link href="/css/shop/themes/templates/kanasi.css?ver=1710605584" rel="stylesheet" type="text/css">
     <link href="/css/shop/mobile.css?ver=1710279352" rel="stylesheet" type="text/css" media="(max-width: 1366px)">
+
     <script>
-        window.shop_currency = 'руб.';
+        window.shop_currency = 'тг.';
         window.shop_id = '1018';
         window.customer_discount = '';
         window.template_class = 'kanasi';
@@ -84,6 +85,7 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
         window.promo_discount = null;
         window.promo_title = null;
         window.one_click_buy = 1;
+
     </script>
 
 
@@ -300,42 +302,103 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
     </div>
 </footer>
 
-<script src="/jquery-3.6.0.min.js"></script>
-<script src="/npm/feather-icons/dist/feather.min.js" type="module"></script>
-<script>$(function () {
-        feather.replace();
-    });</script>
-<script src="/js/swiper-min.js" type="text/javascript" type="module"></script>
-<script src="/js/script-min.js" type="text/javascript"></script>
-
 <link rel="stylesheet" href="/modules/fontawesome/fa-free-v4-font-face.min.css">
 <link rel="stylesheet" href="/modules/fontawesome/fa-free-v4-shims.min.css">
 <link rel="stylesheet" href="/modules/fontawesome/fa-free.min.css">
 
 
-<script>
+<?php
+$this->registerJs('
     $(function () {
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 5000,
-            },
-            resizeReInit: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            noSwipingClass: 'noSwipingClass'
-        });
-
-
+        feather.replace();
     });
+', \yii\web\View::POS_END);
+$this->registerJs("$(function() {
+                $('body').on('click', '.next', function() {
+                    $('.swiper-button-next').click();
+                });
 
-</script>
-<?php $this->endBody() ?>
+                switch (template_class) {
+					case 'simple':
+						var direction = 'horizontal';
+						var sliders = 8;
+						break;
+
+					case 'michigan':
+					case 'tahoe':
+						var direction = 'horizontal';
+						var sliders = 4;
+						break;
+
+					default: 
+						var direction = 'vertical';
+						var sliders = 4;
+						break;
+				}
+
+				if (window.innerWidth < 670) {
+					direction = 'horizontal';
+					sliders = 4;
+				}
+				var galleryThumbs = new Swiper('.gallery-thumbs', {
+					slidesPerView: sliders,
+					spaceBetween: 20,
+					direction: direction,
+					watchSlidesVisibility: true,
+				});
+				var galleryTop = new Swiper('.gallery-top', {
+					spaceBetween: 0,
+					slidesPerView: 1,
+					autoHeight: true,
+					zoom: true,
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+					thumbs: {
+						swiper: galleryThumbs
+					}
+				});
+
+                let innerHeight = $('.extra_image .swiper-wrapper').outerHeight();
+                let wrapperHeight = $('.extra_image').outerHeight();
+                if (innerHeight > wrapperHeight) {
+                    $('.item_preview .next').css({
+                        'opacity': 1
+                    });
+                }
+                
+                $('.zoom').click(function() {
+                    $(this).hide();
+                    setTimeout(function() {
+                        galleryTop.update();
+                    }, 100);
+                    $('.image').addClass('active');
+                    $('.gallery-top .cancel').show();
+                });
+                $('.gallery-top .cancel').click(function() {
+                    $(this).hide();
+                    $('.image .zoom').show();
+                    $('.image').removeClass('active');
+                    setTimeout(function() {
+                        galleryTop.update();
+                    }, 100);
+                });
+
+                var favorites = window.addshop.storage.getProp('favorites');
+                var is_in_favorites = false;
+                $.each(favorites, function(index, el) {
+                    if (window.item.id == el.id) {
+                        is_in_favorites = true;
+                    }
+                });
+                if (is_in_favorites) {
+                    $('.add_favorite').addClass('active');
+                    $('.add_favorite span').text('В избранных');
+                }
+            });"
+,\yii\web\View::POS_END);
+$this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>

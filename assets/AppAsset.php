@@ -23,6 +23,14 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
+        'js/jquery-3.6.0.min.js',
+        [
+            'src' => 'js/feather.min.js',
+            'type' => 'module',
+        ],
+        'js/script-min.js',
+        'js/swiper-min.js',
+        'js/zoomer.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
