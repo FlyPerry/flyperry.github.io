@@ -10,22 +10,22 @@ $this->title = 'My Yii Application';
 
         <div class="item" data-discount-type="percent" data-discount="0.00" data-code="61004">
 
-            <a class="item_link" href="items/smartfon-apple-iphone-11-128gb-black/index.htm">
+            <a class="item_link" href="/items/1">
                 <div class="image image_size_400x400">
                     <div class="item_tags">
                         <div class="bestseller">Хит продаж</div>
                     </div>
                     <div class="bg_dark"></div>
-                    <img src="img/250x250/1018/items/1_1594629788.png"
+                    <img src="/img/250x250/1018/items/1_1594629788.png"
                          alt="Смартфон Apple iPhone 11 128GB Black" data-switch="0" width="250px"
                          height="250px" loading="lazy">
-                    <img src="img/250x250/1018/items/1_1_1594629794.png"
+                    <img src="/img/250x250/1018/items/1_1_1594629794.png"
                          alt="Смартфон Apple iPhone 11 128GB Black" data-switch="1"
                          style="display: none;" width="250px" height="250px">
                 </div>
             </a>
             <div class="item_content " data-discount="">
-                <div class="descr"><a href="items/smartfon-apple-iphone-11-128gb-black/index.htm">Смартфон
+                <div class="descr"><a href="/items/smartfon-apple-iphone-11-128gb-black">Смартфон
                         Apple iPhone 11 128GB Black</a></div>
                 <div class="short_descr">В его компактном стильном корпусе поместился впечатляющий
                     6,1-дюймовый экран Liquid Retina.
@@ -37,7 +37,7 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
                 <div class="btn_wrapp">
-                    <a class="more" href="items/smartfon-apple-iphone-11-128gb-black/index.htm">Подробнее</a>
+                    <a class="more" href="/items/smartfon-apple-iphone-11-128gb-black">Подробнее</a>
                 </div>
             </div>
         </div>
