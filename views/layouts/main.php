@@ -35,6 +35,7 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
     <meta name="description"
           content="Parashute - Интернет магазин электронных сигарет">
     <meta content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" name="viewport">
+    <meta name="verify-paysera" content="1bf510534e94e13d95f068d7837a52ad">
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <link rel="icon" type="image/png" href="/img/64x64/1018/favicon/favikonka_15946435384164.png">
@@ -77,7 +78,7 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
     <link href="/css/shop/mobile.css?ver=1710279352" rel="stylesheet" type="text/css" media="(max-width: 1366px)">
 
     <script>
-        window.shop_currency = 'тг.';
+        window. shop_currency = 'тг.';
         window.shop_id = '1018';
         window.customer_discount = '';
         window.template_class = 'kanasi';
