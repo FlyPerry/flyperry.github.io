@@ -10,6 +10,7 @@ $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
+        '@uploads' => '/uploads'
     ],
     'components' => [
         'request' => [
@@ -47,6 +48,9 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'items/create' => 'items/create',
+                'items/update/<id:\d+>' => 'items/update',
+                'items/delete/<id:\d+>' => 'items/delete',
                 'items/<id:[\w-]+>' => 'items/view-by-title',
             ],
         ],

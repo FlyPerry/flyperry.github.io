@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Items;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -61,7 +62,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $items = Items::find()->where(['hit'=>'1'])->all();
+        return $this->render('index',['items'=>$items]);
     }
 
     /**

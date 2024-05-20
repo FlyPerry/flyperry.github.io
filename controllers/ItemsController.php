@@ -3,8 +3,10 @@
 namespace app\controllers;
 
 use app\models\Items;
-
-class ItemsController extends \yii\web\Controller
+use Yii;
+use yii\web\Controller;
+use yii\web\UploadedFile;
+class ItemsController extends Controller
 {
     public function actionIndex()
     {
@@ -22,6 +24,25 @@ class ItemsController extends \yii\web\Controller
         // Возвращаем представление или делаем что-то еще с полученными данными
         return $this->render('index', [
             'item' => $item,
+        ]);
+    }
+    public function actionCreate()
+    {
+        $model = new Items();
+
+        if ($model->load(Yii::$app->request->post())) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            if ($model->upload()) {
+                // File is uploaded successfully
+                $model->photo = $model->imageFile->baseName . '.' . $model->imageFile->extension;
+                if ($model->save(false)) {
+                    return $this->redirect(['view', 'id' => $model->id]);
+                }
+            }
+        }
+
+        return $this->render('create', [
+            'model' => $model,
         ]);
     }
 }

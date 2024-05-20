@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "items".
@@ -10,14 +11,21 @@ use Yii;
  * @property int $id
  * @property string|null $itemName
  * @property string|null $desc
+ * @property string|null $fullDesc
  * @property int $inStock
  * @property int $amount
  * @property int $active
  * @property int $hit
  * @property int $new
+ * @property string|null $photo
  */
 class Items extends \yii\db\ActiveRecord
 {
+    /**
+     * @var UploadedFile
+     */
+    public $imageFile;
+    const PLACEHOLDER_IMAGE = '/no_img.png'; // Путь к заглушке
     /**
      * {@inheritdoc}
      */
@@ -33,7 +41,9 @@ class Items extends \yii\db\ActiveRecord
     {
         return [
             [['inStock', 'amount', 'active', 'hit', 'new'], 'integer'],
-            [['itemName', 'desc'], 'string', 'max' => 255],
+            [['itemName', 'desc', 'photo'], 'string', 'max' => 255],
+            [['fullDesc'], 'string', 'max' => 1024],
+            [['imageFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg'],
         ];
     }
 
@@ -51,6 +61,28 @@ class Items extends \yii\db\ActiveRecord
             'active' => 'Active',
             'hit' => 'Hit',
             'new' => 'New',
+            'photo' => 'Photo',
+            'fullDesc' => 'fullDesc',
+            'imageFile' => 'Image File',
         ];
+    }
+
+    /**
+     * Uploads the file to the specified folder.
+     *
+     * @return bool whether the upload succeeded
+     */
+    public function upload()
+    {
+        if ($this->validate()) {
+            $this->imageFile->saveAs( __DIR__.'/../web/uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public function getPhotoUrl()
+    {
+        return $this->photo ? '@uploads'.'/'.$this->photo : '/img/' . self::PLACEHOLDER_IMAGE;
     }
 }

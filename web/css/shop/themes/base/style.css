@@ -3071,7 +3071,8 @@ footer .bottom ul, footer .top .inner ul, ul {
     height: 70px;
     width: 70px;
     border: solid 1px #f4f4f4;
-    cursor: pointer
+    cursor: pointer;
+    object-fit:cover;
 }
 
 .item_preview .left .video_preview, .prop_row {

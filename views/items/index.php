@@ -32,32 +32,13 @@ use yii\web\View;
 
 <div class="item_preview">
     <div class="left">
-        <div class="extra_image"> <!--TODO:Добавить циклом вывод картинок-->
+        <div class="extra_image">
             <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="elevatezoom-gallery" data-update=""
-                             data-image="/img/800x0/1018/items/2_1594630017.png"
-                             data-zoom-image="/img/800x0/1018/items/2_1594630017.png" data-color="0"
-                             src="/img/100x100/1018/items/2_1594630017.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="elevatezoom-gallery" data-update=""
-                             data-image="/img/800x0/1018/items/2_1_1594630020.png"
-                             data-zoom-image="/img/800x0/1018/items/2_1_1594630020.png" data-color="0"
-                             src="/img/100x100/1018/items/2_1_1594630020.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="elevatezoom-gallery" data-update=""
-                             data-image="/img/800x0/1018/items/2_2_1594630022.png"
-                             data-zoom-image="/img/800x0/1018/items/2_2_1594630022.png" data-color="0"
-                             src="/img/100x100/1018/items/2_2_1594630022.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="elevatezoom-gallery" data-update=""
-                             data-image="/img/800x0/1018/items/2_3_1594630024.png"
-                             data-zoom-image="/img/800x0/1018/items/2_3_1594630024.png" data-color="0"
-                             src="/img/100x100/1018/items/2_3_1594630024.png">
+                        <?= Html::img('@uploads'.'/'.$item->photo, ['data-image' => '@uploads'.'/'.$item->photo
+                                ,'class' => 'elevatezoom-gallery'
+                                ,'data-zoom-image' => '@uploads'.'/'.$item->photo]) ?>
                     </div>
                 </div>
             </div>
@@ -78,24 +59,10 @@ use yii\web\View;
                 <div class="cancel">
                     <i class="f7-icons">zoom_out</i>
                 </div>
-                <div class="swiper-wrapper"> <!--TODO:Добавить циклом вывод картинок-->
+                <div class="swiper-wrapper">
                     <div class="swiper-slide offer_image_0">
-                        <img class="big" data-zoom-image="/img/800x0/1018/items/2_1594630017.png" data-color="0"
-                             src="/img/800x0/1018/items/2_1594630017.png">
+                        <?= Html::img('@uploads'.'/'.$item->photo, ['class' => 'big','data-zoom-image' => '@uploads'.'/'.$item->photo]) ?>
                     </div>
-                    <div class="swiper-slide offer_image_0">
-                        <img class="big" data-zoom-image="/img/800x0/1018/items/2_1_1594630020.png" data-color="0"
-                             src="/img/800x0/1018/items/2_1_1594630020.png">
-                    </div>
-                    <div class="swiper-slide offer_image_0">
-                        <img class="big" data-zoom-image="/img/800x0/1018/items/2_2_1594630022.png" data-color="0"
-                             src="/img/800x0/1018/items/2_2_1594630022.png">
-                    </div>
-                    <div class="swiper-slide offer_image_0">
-                        <img class="big" data-zoom-image="/img/800x0/1018/items/2_3_1594630024.png" data-color="0"
-                             src="/img/800x0/1018/items/2_3_1594630024.png">
-                    </div>
-
                 </div>
                 <!-- Add Arrows -->
                 <div class="swiper-button-next swiper-button-white"></div>
@@ -143,68 +110,20 @@ use yii\web\View;
 
         <div class="tab tab_left" data-tab-content="properties">
 
-            <h3 class="item_preview_title">Характеристики</h3>
-
-            <div class="prop_row">
-                <div class="prop_title">Производитель</div>
-                <div class="separator_tabulator"></div>
-                <div class="prop_val">
-                    <a href="/categories/">Apple</a>
+            <div class="item_info_wrapper">
+                <h3 class="item_preview_title">Описание товара</h3>
+                <div class="tab tab_right" data-tab-content="description">
+                    <div class="item_description">
+                        <p><?=$item->fullDesc?></p>
+                    </div>
                 </div>
             </div>
-            <div class="prop_row">
-                <div class="prop_title">Единица измерения</div>
-                <div class="separator_tabulator"></div>
-                <div class="prop_val">шт.</div>
-            </div>
-            <div class="prop_row">
-                <div class="prop_title">Конфигурация процессора</div>
-                <div class="separator_tabulator"></div>
-                <div class="prop_val">4x Cortex-A7 1.3 ГГц</div>
-            </div>
-            <div class="prop_row">
-                <div class="prop_title">Объем оперативной памяти</div>
-                <div class="separator_tabulator"></div>
-                <div class="prop_val">512 МБ</div>
-            </div>
-            <div class="prop_row">
-                <div class="prop_title">Количество SIM-карт</div>
-                <div class="separator_tabulator"></div>
-                <div class="prop_val">2 SIM</div>
-            </div>
-            <div class="prop_row">
-                <div class="prop_title">Разрешение экрана</div>
-                <div class="separator_tabulator"></div>
-                <div class="prop_val">1280x600</div>
-            </div>
-            <div class="prop_row">
-                <div class="prop_title">Емкость аккумулятора</div>
-                <div class="separator_tabulator"></div>
-                <div class="prop_val">1400 мА*ч</div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="item_info_wrapper">
-    <h3 class="item_preview_title">Описание товара</h3>
-    <div class="tab tab_right" data-tab-content="description">
-        <div class="item_description">
-            <p>Узкие, едва заметные рамки помогают сосредоточить внимание на изображении. И поверьте, здесь есть на
-                что посмотреть. Расширенное цветовое пространство DCI-P3 делает картинку по-настоящему яркой и
-                реалистичной.</p>
-
-            <p>Функция True Tone заботится о том, чтобы каждый оттенок всегда оставался естественным. Она
-                автоматически корректирует тональность в соответствии с характеристиками окружающего освещения.
-                Прибавьте к этому мгновенный тактильный отклик на прикосновение &mdash; и вы получите идеальный
-                экран.</p>
-
         </div>
     </div>
 </div>
+
 
 <?php
 $js = "$('.pop_up_price').text('213')";
-$this->registerJs($js,View::POS_LOAD);
+$this->registerJs($js, View::POS_LOAD);
 ?>
