@@ -5,7 +5,6 @@
 
 use yii\helpers\Html;
 use yii\web\View;
-
 ?>
 <script>
     window.item = {};
@@ -36,9 +35,9 @@ use yii\web\View;
             <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <?= Html::img('@uploads'.'/'.$item->photo, ['data-image' => '@uploads'.'/'.$item->photo
-                                ,'class' => 'elevatezoom-gallery'
-                                ,'data-zoom-image' => '@uploads'.'/'.$item->photo]) ?>
+                        <?= Html::img('@uploads' . '/' . $item->photo, ['data-image' => '@uploads' . '/' . $item->photo
+                            , 'class' => 'elevatezoom-gallery'
+                            , 'data-zoom-image' => '@uploads' . '/' . $item->photo]) ?>
                     </div>
                 </div>
             </div>
@@ -61,7 +60,7 @@ use yii\web\View;
                 </div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide offer_image_0">
-                        <?= Html::img('@uploads'.'/'.$item->photo, ['class' => 'big','data-zoom-image' => '@uploads'.'/'.$item->photo]) ?>
+                        <?= Html::img('@uploads' . '/' . $item->photo, ['class' => 'big', 'data-zoom-image' => '@uploads' . '/' . $item->photo]) ?>
                     </div>
                 </div>
                 <!-- Add Arrows -->
@@ -79,19 +78,19 @@ use yii\web\View;
         <div class="item_price" data-discount="0.00" data-discount-type="percent">
             <?php if ($item->inStock > 0): ?>
 
-                <form action="/basket/add/" method="GET">
+                <form id="addToCartForm">
                     <div class="count">
-
                         <span class="details_title">Количество:</span>
                         <div class="count_minus">-</div>
-                        <input type="text" name="quantity" class="number_input" value="1.00" min="1.00" step="1.00"
+                        <input type="text" name="quantity" class="number_input" value="1" min="1" step="1"
                                max="<?= $item->inStock; ?>">
                         <div class="count_plus">+</div>
                     </div>
-                    <button class="disable">
+                    <button type="submit" class="addToCart">
                         <i class="f7-icons">cart_fill</i>В корзину
                     </button>
                 </form>
+
             <?php endif; ?>
 
 
@@ -114,7 +113,7 @@ use yii\web\View;
                 <h3 class="item_preview_title">Описание товара</h3>
                 <div class="tab tab_right" data-tab-content="description">
                     <div class="item_description">
-                        <p><?=$item->fullDesc?></p>
+                        <p><?= $item->fullDesc ?></p>
                     </div>
                 </div>
             </div>
@@ -122,8 +121,41 @@ use yii\web\View;
     </div>
 </div>
 
-
 <?php
-$js = "$('.pop_up_price').text('213')";
-$this->registerJs($js, View::POS_LOAD);
+$this->registerJsFile(
+    'https://code.jquery.com/jquery-3.6.0.min.js',
+    ['depends' => [\yii\web\JqueryAsset::class]]
+);
+
+$this->registerJs(<<<JS
+        $('#addToCartForm').on('submit', function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+                var itemId = '$item->id';
+                var itemName = '$item->itemName';
+                var itemPrice = '$item->amount';
+                var itemCount = $("[name=quantity]").val();
+            $.ajax({
+                url: '/basket/add-to-basket', // Укажите URL для обработки запроса
+                type: 'POST',
+                data: {
+                    id: itemId,
+                    name: itemName,
+                    price: itemPrice,
+                    count: itemCount,
+                    _csrf: yii.getCsrfToken()
+                },
+                success: function(response) {
+                    if (response.success) {
+                        alert('Товар успешно добавлен в корзину!');
+                    console.log('Item added to basket:', response.basket);
+                    } else {
+                        alert('Произошла ошибка при добавлении товара в корзину.');
+                    }
+                },
+                error: function() {
+                    alert('Произошла ошибка при отправке запроса.');
+                }
+            });
+        });
+JS, View::POS_READY);
 ?>

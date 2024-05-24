@@ -22,7 +22,7 @@ $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, 
 $this->registerMetaTag(['name' => 'description', 'content' => $this->params['meta_description'] ?? '']);
 $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_keywords'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
-$categories = ['elektronka' => 'Электронные сиграреты', 'zhizha' => 'Жидкости', 'podiki' => 'Устройства']
+$categories = ['1' => 'Электронные сиграреты', '2' => 'Жидкости', '3' => 'Устройства']
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -78,7 +78,7 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
     <link href="/css/shop/mobile.css?ver=1710279352" rel="stylesheet" type="text/css" media="(max-width: 1366px)">
 
     <script>
-        window. shop_currency = 'тг.';
+        window.shop_currency = 'тг.';
         window.shop_id = '1018';
         window.customer_discount = '';
         window.template_class = 'kanasi';
@@ -118,35 +118,11 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
                     <div class="categories">
                         <div class="mob-title"><i class="f7-icons">bars</i>Категории товаров</div>
                         <ul class="level_1">
-                            <li><a href="/categories/s-emkoj-batareej" class="" title="С емкой батареей">С
-                                    емкой батареей</a>
-                                <ul class="level_2">
-                                    <li><a href="/categories/smartfony-nokia" class="" title="Смартфоны Nokia">Смартфоны
-                                            Nokia</a></li>
-                                    <li><a href="/categories/smartfony-philips" class=""
-                                           title="Смартфоны Philips">Смартфоны Philips</a></li>
-                                    <li><a href="/categories/smartfony-bluefox" class=""
-                                           title="Смартфоны BlueFox">Смартфоны BlueFox</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/categories/s-bolshim-ekranom" class="" title="С большим экраном">С
-                                    большим экраном</a>
-                                <ul class="level_2">
-                                    <li><a href="/categories/smartfony-samsung" class=""
-                                           title="Смартфоны Samsung">Смартфоны Samsung</a></li>
-                                    <li><a href="/categories/smartfony-huawei" class=""
-                                           title="Смартфоны Huawei">Смартфоны Huawei</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/categories/s-horoshej-kameroj" class="" title="С хорошей камерой">С
-                                    хорошей камерой</a>
-                                <ul class="level_2">
-                                    <li><a href="/categories/smartfony-alcatel" class=""
-                                           title="Смартфоны Alcatel">Смартфоны Alcatel</a></li>
-                                    <li><a href="/categories/smartfony-apple" class="" title="Смартфоны Apple">Смартфоны
-                                            Apple</a></li>
-                                </ul>
-                            </li>
+                            <?php foreach ($categories as $category => $category_name): ?>
+                                <li>
+                                    <?= Html::a($category_name, Url::to(['catalog/' . $category]), ['title' => $category_name]) ?>
+                                </li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                     <div class="navigation">
@@ -189,7 +165,7 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
                         </form>
                     </div>
                     <div class="basket">
-                        <a href="/basket">
+                        <a href="/basket/myBasket">
                             <i class="f7-icons">cart_fill</i>
                         </a>
                     </div>
@@ -217,6 +193,25 @@ $categories = ['elektronka' => 'Электронные сиграреты', 'zhi
                 <div class="content nositebar ">
                     <?= Alert::widget() ?>
                     <?= $content ?>
+                </div>
+
+                <div class="triggers">
+                    <div class="trigger">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span><p>Доставляем заказы по всей территории России</p></span>
+                    </div>
+                    <div class="trigger">
+                        <i class="fas fa-shield-alt"></i>
+                        <span><p>На всю продукцию предоставляется гарантия</p></span>
+                    </div>
+                    <div class="trigger">
+                        <i class="fas fa-money-check"></i>
+                        <span><p>Покупатель может оплатить заказ любым удобным способом</p></span>
+                    </div>
+                    <div class="trigger">
+                        <i class="fas fa-truck-loading"></i>
+                        <span><p>Широкий ассортимент телефонов от крупнейших поставщиков</p></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -397,7 +392,7 @@ $this->registerJs("$(function() {
                     $('.add_favorite span').text('В избранных');
                 }
             });"
-,\yii\web\View::POS_END);
+    , \yii\web\View::POS_END);
 $this->endBody() ?>
 </body>
 </html>

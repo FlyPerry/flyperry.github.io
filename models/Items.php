@@ -85,4 +85,14 @@ class Items extends \yii\db\ActiveRecord
     {
         return $this->photo ? '@uploads'.'/'.$this->photo : '/img/' . self::PLACEHOLDER_IMAGE;
     }
+    /**
+     * Gets the categories for the item.
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategories()
+    {
+        return $this->hasMany(Catalog::class, ['id' => 'categoryID'])
+            ->viaTable('categories_item', ['itemID' => 'id']);
+    }
 }

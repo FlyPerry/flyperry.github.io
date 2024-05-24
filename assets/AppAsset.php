@@ -34,6 +34,7 @@ class AppAsset extends AssetBundle
         ['src' => 'js/swiper-min.js', 'type' => 'module'], // Добавляем скрипт сюда
 
         'js/zoomer.js',
+        'js/js.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

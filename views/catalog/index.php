@@ -1,21 +1,18 @@
 <?php
-
-/** @var yii\web\View $this
+/**
  * @var \app\models\Items $items
- * @var \app\models\Items $item
- * */
+ * @var \app\models\Catalog $catalog
+ */
 
 use yii\helpers\Html;
 
-$this->title = 'Parashute - Интернет магазин';
-//print_r($items);
-//die;
 ?>
 <div class="items_wrapper popular">
-    <h2>Популярные товары</h2>
+    <h2><?= $catalog->title; ?></h2>
+    <?= ($items == false) ? '<h3>В данной категории товары отсутствуют</h3>' : '' ?>
     <div class="items">
         <?php foreach ($items as $item): ?>
-            <div class="item" data-discount-type="percent" data-code="<?=$item->id; ?>">
+            <div class="item" data-discount-type="percent" data-code="<?= $item->id; ?>">
 
                 <a class="item_link" href="/items/<?= $item->id; ?>">
                     <div class="image">
