@@ -394,6 +394,24 @@ $this->registerJs("$(function() {
             });"
     , \yii\web\View::POS_END);
 $this->endBody() ?>
+<div id="basket_popup_list" class="kanasi" style="right: 186.21px; display: none;">
+    <div class="close">✕</div>
+    <div class="items"><div class="item_in_basket">
+            <a href="/for%20Parashute/items/smartfon-samsung-galaxy-a20-32gb/index.htm">
+                <div class="image"><img src="../../img/100x100/1018/items/7_1594631822.png"></div>
+                <div class="descr">
+                    <div class="title">Смартфон Samsung Galaxy A20 32GB</div>
+                    <div class="quantity">Количество: 1.0</div>
+                    <div class="price ">Цена: 12990.00  руб.</div>
+
+                </div>
+            </a>
+        </div></div>
+    <div class="itogo">
+        <div class="total">Итого: <span class="">12 990.00</span>&nbsp;  руб.</div>
+        <div class="btns"><a href="/basket/">Корзина</a> <a href="/checkout/">Оформить</a></div>
+    </div>
+</div>
 </body>
 </html>
 <?php $this->endPage() ?>
