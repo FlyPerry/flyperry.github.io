@@ -13,9 +13,11 @@ use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use yii\helpers\Url;
+use app\models\Items;
 
 AppAsset::register($this);
 
+$basketCookie = Yii::$app->request->cookies->getValue('basket', '');
 $this->registerCsrfMetaTags();
 $this->registerMetaTag(['charset' => Yii::$app->charset], 'charset');
 $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no']);
@@ -85,7 +87,6 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
         window.item_img_zoom = '1';
         window.promo_discount = null;
         window.promo_title = null;
-
     </script>
 
 
@@ -165,7 +166,7 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                         </form>
                     </div>
                     <div class="basket">
-                        <a href="/basket/myBasket">
+                        <a href="/basket/">
                             <i class="f7-icons">cart_fill</i>
                         </a>
                     </div>
@@ -396,21 +397,42 @@ $this->registerJs("$(function() {
 $this->endBody() ?>
 <div id="basket_popup_list" class="kanasi" style="right: 186.21px; display: none;">
     <div class="close">✕</div>
-    <div class="items"><div class="item_in_basket">
-            <a href="/for%20Parashute/items/smartfon-samsung-galaxy-a20-32gb/index.htm">
-                <div class="image"><img src="../../img/100x100/1018/items/7_1594631822.png"></div>
-                <div class="descr">
-                    <div class="title">Смартфон Samsung Galaxy A20 32GB</div>
-                    <div class="quantity">Количество: 1.0</div>
-                    <div class="price ">Цена: 12990.00  руб.</div>
+    <?php if (!empty($basketCookie)): ?>
 
+        <div class="items">
+            <?php
+            $basketItems = json_decode($basketCookie, true);
+            $basketSum = 0;
+            // Теперь $basketItems содержит распарсенные данные из куки
+            // Вы можете использовать массив $basketItems для дальнейшей обработки данных
+            foreach ($basketItems as $basketItem):
+                $item = Items::findOne($basketItem['id']);
+                $itemSum = $basketItem['count'] * $item->amount;
+                $basketSum = $basketSum +$itemSum;
+                ?>
+                <div class="item_in_basket">
+                    <a href="/items/<?= $item['id']; ?>">
+                        <div class="image"><?=Html::img($item->getPhotoUrl(), ['alt' => $item->itemName
+                                , 'loading' => 'lazy'
+                            ]);?></div>
+                        <div class="descr">
+                            <div class="title"><?= $item->itemName; ?></div>
+                            <div class="quantity">Количество: <?= $basketItem['count'] ?></div>
+                            <div class="price ">Цена: <?=$itemSum ?> ₸г.</div>
+
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </div></div>
-    <div class="itogo">
-        <div class="total">Итого: <span class="">12 990.00</span>&nbsp;  руб.</div>
-        <div class="btns"><a href="/basket/">Корзина</a> <a href="/checkout/">Оформить</a></div>
-    </div>
+            <?php endforeach; ?>
+        </div>
+        <div class="itogo">
+            <div class="total">Итого: <span class=""><?=$basketSum;?></span>&nbsp; ₸г.</div>
+            <div class="btns"><a href="/basket/">Корзина</a> <a href="/checkout/">Оформить</a></div>
+        </div>
+    <script>$(function (){
+            $('.pop_up_price').text('<?=$basketSum;?> тг.');
+        })</script>
+    <?php endif; ?>
 </div>
 </body>
 </html>

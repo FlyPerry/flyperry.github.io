@@ -147,7 +147,7 @@ $this->registerJs(<<<JS
                 success: function(response) {
                     if (response.success) {
                         alert('Товар успешно добавлен в корзину!');
-                    console.log('Item added to basket:', response.basket);
+                        location.reload();
                     } else {
                         alert('Произошла ошибка при добавлении товара в корзину.');
                     }
