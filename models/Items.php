@@ -83,7 +83,7 @@ class Items extends \yii\db\ActiveRecord
     }
     public function getPhotoUrl()
     {
-        return $this->photo ? '@uploads'.'/'.$this->photo : '/img/' . self::PLACEHOLDER_IMAGE;
+        return !empty($this->photo) ? '@uploads'.'/'.$this->photo : '/img/' . self::PLACEHOLDER_IMAGE;
     }
     /**
      * Gets the categories for the item.
