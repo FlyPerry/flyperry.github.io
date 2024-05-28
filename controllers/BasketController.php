@@ -1,4 +1,5 @@
 <?php
+
 namespace app\controllers;
 
 use Yii;
@@ -56,5 +57,12 @@ class BasketController extends Controller
             }
         }
         return false;
+    }
+
+
+    public function actionIndex()
+    {
+        $basketCookie = Yii::$app->request->cookies->getValue('basket', '');
+        return $this->render("index.php", ['basketCookie' => $basketCookie]);
     }
 }
