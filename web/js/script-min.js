@@ -424,10 +424,7 @@ $(function ()   {
                 }), $(document).click(function () {
                     i.removeClass("active"), a.hide()
                 })
-            }), "/basket/" == window.location.pathname && (App.basket.renderBasket(), $("#basket_list").on("click", ".basket_item_wrapp .remove", function () {
-                var t = $(this).data("index");
-                App.basket.removeItemByIndex(t), App.basket.renderBasket(), App.basket.renderfloatBasketList()
-            })),
+            }),
             "/favorites/" == window.location.pathname && (App.renderFavorites(), $("#favorites_list").on("click", ".remove", function () {
                 var t = $(this).data("index"), e = App.storage.getProp("favorites") || [];
                 e.splice(t, 1), App.storage.setProp("favorites", e), App.renderFavorites()
