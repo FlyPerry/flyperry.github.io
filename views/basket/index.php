@@ -91,7 +91,7 @@ $checkoutDetails = json_decode($checkoutDetails, true);
                                 class="amountCost">
                             <?= $basketSum; ?></span> тг.</span>
                 </div>
-                <a class="checkout_btn" href="/basket/">Оформить заказ</a>
+                <a class="checkout_btn" href="/checkout/">Оформить заказ</a>
             </div>
         </div>
     </div>
