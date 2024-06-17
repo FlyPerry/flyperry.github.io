@@ -1,1 +1,48 @@
 /* my custom CSS */
+
+.btn-checkbox {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.btn-checkbox.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-checkbox input[type="checkbox"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+}
+#image-preview {
+    max-width: 50%;
+    max-height: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container takes full height */
+}
+#image-preview img {
+    border: 1px solid #ccc; /* Optional: Add border for better visualization */
+
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Adjust image size without stretching */
+}
+
+.help-block{
+    color: rgba(206, 39, 39, 0.76);
+}

@@ -28,8 +28,13 @@ class CheckoutController extends Controller
 
     public function actionIndex()
     {
+        $cookies = Yii::$app->request->cookies;
+        if (!$cookies->has('basket')){
+            return $this->redirect(['basket/index']);
+        }
         $basket = json_decode(Yii::$app->request->cookies->getValue('basket', []));
 
+        if ($basket != NULL)
         $amount = 0;
         $items = [];
         foreach ($basket as $productId => $quantity) {

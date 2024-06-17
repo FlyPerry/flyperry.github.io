@@ -15,7 +15,14 @@ use yii\bootstrap5\NavBar;
 use yii\helpers\Url;
 use app\models\Items;
 
+use yii\web\YiiAsset;
+use yii\bootstrap5\BootstrapAsset;
+use yii\grid\GridViewAsset;
+
 AppAsset::register($this);
+YiiAsset::register($this);
+BootstrapAsset::register($this);
+GridViewAsset::register($this);
 
 $basketCookie = Yii::$app->request->cookies->getValue('basket', '');
 $this->registerCsrfMetaTags();
@@ -92,6 +99,7 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
 
 </head>
 <body class=" kanasi main_page rate_1 shop_1018" data-template="kanasi" data-color-scheme="stone">
+
 <div class="wrapper">
 
     <?php $this->beginBody() ?>
@@ -106,6 +114,7 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                         <li class="li"><a href="/dostavka-i-oplata" class="" title="Доставка и оплата">Доставка
                                 и оплата</a></li>
                         <li class="li"><a href="/kontakty" class="" title="Контакты">Контакты</a></li>
+
                     </ul>
                 </div>
                 <div class="mob_menu">
@@ -124,6 +133,16 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                                     <?= Html::a($category_name, Url::to(['catalog/' . $category]), ['title' => $category_name]) ?>
                                 </li>
                             <?php endforeach; ?>
+                            <?php if (!Yii::$app->user->isGuest): ?>
+                                <li class="li">
+                                    <form action="/site/logout" method="POST">
+                                        <input id="form-token" type="hidden" name="<?= Yii::$app->request->csrfParam ?>"
+                                               value="<?= Yii::$app->request->csrfToken ?>"/>
+                                        <input class="btn acc_exit" name="btn_logout" type="submit"
+                                               value="logout"/>
+                                    </form>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                     </div>
                     <div class="navigation">
@@ -134,6 +153,7 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                             <li class="li"><a href="/dostavka-i-oplata" class="" title="Доставка и оплата">Доставка
                                     и оплата</a></li>
                             <li class="li"><a href="/kontakty" class="" title="Контакты">Контакты</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -180,7 +200,21 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                                 <li>
                                     <?= Html::a($category_name, Url::to(['catalog/' . $category]), ['title' => $category_name]) ?>
                                 </li>
+
                             <?php endforeach; ?>
+                            <?php if (!Yii::$app->user->isGuest): ?>
+                                <li class="li">
+                                    <?= Html::a('Склад', Url::to(['/admin/']), ['title' => 'Склад']) ?>
+                                </li>
+                                <li class="li">
+                                    <form action="/site/logout" method="POST">
+                                        <input id="form-token" type="hidden" name="<?= Yii::$app->request->csrfParam ?>"
+                                               value="<?= Yii::$app->request->csrfToken ?>"/>
+                                        <input class="btn text-white acc_exit" name="btn_logout" type="submit"
+                                               value="Выйти"/>
+                                    </form>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -192,6 +226,7 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
         <div class="block main">
             <div class="inner">
                 <div class="content nositebar ">
+
                     <?= Alert::widget() ?>
                     <?= $content ?>
                 </div>
@@ -211,7 +246,7 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                     </div>
                     <div class="trigger">
                         <i class="fas fa-truck-loading"></i>
-                        <span><p>Широкий ассортимент телефонов от крупнейших поставщиков</p></span>
+                        <span><p>Широкий ассортимент устройств от крупнейших поставщиков</p></span>
                     </div>
                 </div>
             </div>
@@ -407,31 +442,34 @@ $this->endBody() ?>
             // Вы можете использовать массив $basketItems для дальнейшей обработки данных
             foreach ($basketItems as $basketItem):
                 $item = Items::findOne($basketItem['id']);
+
                 $itemSum = $basketItem['count'] * $item->amount;
-                $basketSum = $basketSum +$itemSum;
+                $basketSum = $basketSum + $itemSum;
                 ?>
                 <div class="item_in_basket">
                     <a href="/items/<?= $item['id']; ?>">
-                        <div class="image"><?=Html::img($item->getPhotoUrl(), ['alt' => $item->itemName
+                        <div class="image"><?= Html::img($item->getPhotoUrl(), ['alt' => $item->itemName
                                 , 'loading' => 'lazy'
-                            ]);?></div>
+                            ]); ?></div>
                         <div class="descr">
                             <div class="title"><?= $item->itemName; ?></div>
                             <div class="quantity">Количество: <?= $basketItem['count'] ?></div>
-                            <div class="price ">Цена: <?=$itemSum ?> ₸г.</div>
+                            <div class="price ">Цена: <?= $itemSum ?> ₸г.</div>
 
                         </div>
                     </a>
                 </div>
+
+
             <?php endforeach; ?>
         </div>
         <div class="itogo">
-            <div class="total">Итого: <span class=""><?=$basketSum;?></span>&nbsp; ₸г.</div>
+            <div class="total">Итого: <span class=""><?= $basketSum; ?></span>&nbsp; ₸г.</div>
             <div class="btns"><a href="/basket/">Корзина</a> <a href="/checkout/">Оформить</a></div>
         </div>
-    <script>$(function (){
-            $('.pop_up_price').text('<?=$basketSum;?> тг.');
-        })</script>
+        <script>$(function () {
+                $('.pop_up_price').text('<?=$basketSum;?> тг.');
+            })</script>
     <?php endif; ?>
 </div>
 </body>

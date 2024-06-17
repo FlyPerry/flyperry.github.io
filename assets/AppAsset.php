@@ -24,17 +24,19 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/jquery-3.6.0.min.js',
-        ['src' => 'js/script-min.js', 'type' => 'text/javascript'], // Добавляем скрипт сюда
+
+        ['src' => '/js/script-min.js', 'type' => 'text/javascript'], // Добавляем скрипт сюда
 
         [
-            'src' => 'js/feather.min.js',
+            'src' => '/js/feather.min.js',
             'type' => 'module',
         ],
-        ['src' => 'js/swiper-min.js', 'type' => 'text/javascript'], // Добавляем скрипт сюда
-        ['src' => 'js/swiper-min.js', 'type' => 'module'], // Добавляем скрипт сюда
+        ['src' => '/js/swiper-min.js', 'type' => 'text/javascript'], // Добавляем скрипт сюда
+        ['src' => '/js/swiper-min.js', 'type' => 'module'], // Добавляем скрипт сюда
 
         'js/zoomer.js',
         'js/js.js',
+
     ];
     public $depends = [
         'yii\web\YiiAsset',

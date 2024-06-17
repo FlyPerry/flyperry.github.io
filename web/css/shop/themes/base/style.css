@@ -1191,13 +1191,6 @@ a {
     transform: rotate(45deg)
 }
 
-.main input[type=checkbox], .main input[type=radio] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0
-}
 
 .main .checkmark {
     position: absolute;

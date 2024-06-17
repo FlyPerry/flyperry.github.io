@@ -1,4 +1,33 @@
-$(function () {
+$(document).ready(function () {
+    $('#item-image').change(function () {
+        var input = this;
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#image-preview').html('<img src="' + e.target.result + '" alt="Preview">');
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    });
+    
+    var checkboxes = $('.btn-checkbox input[type="checkbox"]');
+    checkboxes.each(function () {
+        var checkbox = $(this);
+        checkbox.change(function () {
+            if (checkbox.is(':checked')) {
+                checkbox.closest('label').addClass('active');
+            } else {
+                checkbox.closest('label').removeClass('active');
+            }
+        });
+
+        // Initialize the state based on the initial value
+        if (checkbox.is(':checked')) {
+            checkbox.closest('label').addClass('active');
+        }
+    });
 
     function updateItemTotal($input) {
         var count = parseInt($input.val(), 10);
@@ -16,9 +45,8 @@ $(function () {
             }
         });
         $('#basket_total .amountCost').text(basketTotal.toFixed(2) + ' тг.');
-        $('.pop_up_price').text(basketTotal.toFixed()+' тг.')
+        $('.pop_up_price').text(basketTotal.toFixed() + ' тг.')
     }
-
 
 
     $('.count_plus').on('click', function () {
@@ -64,7 +92,7 @@ $(function () {
 
     });
 
-    $('.basket_list').on('change','input.number_input',function (){
+    $('.basket_list').on('change', 'input.number_input', function () {
         updateItemTotal($input);
         updateBasketTotal();
     })
