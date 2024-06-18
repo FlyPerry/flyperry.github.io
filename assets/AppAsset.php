@@ -36,6 +36,7 @@ class AppAsset extends AssetBundle
 
         'js/zoomer.js',
         'js/js.js',
+        'js/mask.js',
 
     ];
     public $depends = [

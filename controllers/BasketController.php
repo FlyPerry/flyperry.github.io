@@ -69,7 +69,7 @@ class BasketController extends Controller
         Yii::$app->response->cookies->add(new Cookie(['name' => 'checkoutDetails', 'value' => json_encode($checkoutDetails)]));
 
         return ['success' => true,
-            'basket' => $checkoutDetails];
+            'checkoutDetails' => $checkoutDetails];
     }
 
     public function actionUpdateBasket()

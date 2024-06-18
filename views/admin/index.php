@@ -11,7 +11,8 @@ use yii\helpers\Url;
 <h1>Админ панель <?= Yii::$app->name ?></h1>
 
 <p>
-    <?= Html::a('Добавить товар', ['items/create'], ['class' => 'btn btn-success']) ?>
+    <?= Html::a('Добавить товар', ['items/create'], ['class' => 'btn btn-outline-success']) ?>
+    <?= Html::a('Список заказов', ['admin/orders'], ['class' => 'btn btn-outline-secondary']) ?>
 </p>
 
 

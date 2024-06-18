@@ -31,22 +31,26 @@ $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, 
 $this->registerMetaTag(['name' => 'description', 'content' => $this->params['meta_description'] ?? '']);
 $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_keywords'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
-$categories = ['1' => 'Электронные сиграреты', '2' => 'Жидкости', '3' => 'Устройства']
+$categories = ['1' => 'Электронные сиграреты', '2' => 'Жидкости', '3' => 'Устройства', '4' => 'Расходники']
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta name="keywords"
           content="Электронка, вейп, подик, вейпы, жижка, купить жижку, купить вейп, купить электронку
           , купить подик, испарители">
     <meta name="description"
-          content="Parashute - Интернет магазин электронных сигарет">
+          content="Jimmy's Tobacco - Интернет магазин электронных сигарет">
     <meta content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" name="viewport">
     <meta name="verify-paysera" content="1bf510534e94e13d95f068d7837a52ad">
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <!-- Подключение библиотеки jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Подключение библиотеки Inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <link rel="icon" type="image/png" href="/img/64x64/1018/favicon/favikonka_15946435384164.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -54,6 +58,9 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
 
     <link href="/css/framework7-icons.css" rel="stylesheet">
     <link href="/css/swiper.css" rel="stylesheet" type="text/css">
+    <!-- Подключение библиотеки Inputmask -->
+
+
     <style>
 
         :root {
@@ -107,16 +114,6 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
     <header id="header">
         <div class="block top_menu">
             <div class="inner">
-                <div class="center menu">
-                    <ul id="menu_list">
-                        <li class="catalog_title li"><a href="/categories">Каталог</a></li>
-                        <li class="li"><a href="/o-kompanii" class="" title="О компании">О компании</a></li>
-                        <li class="li"><a href="/dostavka-i-oplata" class="" title="Доставка и оплата">Доставка
-                                и оплата</a></li>
-                        <li class="li"><a href="/kontakty" class="" title="Контакты">Контакты</a></li>
-
-                    </ul>
-                </div>
                 <div class="mob_menu">
                     <span>Меню</span>
                     <i class="f7-icons">line_horizontal_3</i>
@@ -145,17 +142,6 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                             <?php endif; ?>
                         </ul>
                     </div>
-                    <div class="navigation">
-                        <div class="mob-title"><i class="f7-icons">bars</i>Навигация по сайту</div>
-                        <ul>
-                            <li class="li"><a href="/o-kompanii" class="" title="О компании">О компании</a>
-                            </li>
-                            <li class="li"><a href="/dostavka-i-oplata" class="" title="Доставка и оплата">Доставка
-                                    и оплата</a></li>
-                            <li class="li"><a href="/kontakty" class="" title="Контакты">Контакты</a></li>
-
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -163,13 +149,13 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
             <div class="inner">
                 <div class="logo_wrapper">
                     <a href="/" class="logo">
-                        <img src="/img/250x0/1018/logo/logo_15946433853734.png" alt="PARASHUT">
+                        <img src="/img/250x0/1018/logo/logo_15946433853734.png" alt="Jimmy's Tobacco">
                     </a>
                 </div>
                 <div class="header_right">
 
                     <div class="phone">
-                        <a href="tel:+77074984312">+77074984312</a>
+                        <a href="tel:+77475867044">+77475867044</a>
                     </div>
 
                     <div class="search_open">
@@ -266,7 +252,7 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                 </div>
                 <div class="copyright">&copy;
                     2024
-                    PARASHUT
+                    JIMMY'S TOBACCO
                 </div>
                 <a class="policy" href="/politika-konfidencialnosti">Политика конфиденциальности</a>
                 <a class="user_agreement_link" href="/soglasie-na-obrabotku-personalnyh-dannyh">Согласие на
@@ -315,18 +301,20 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
             </div>
             <div class="fmenu contact_us">
                 <div class="footer_subtitle">Свяжитесь с нами</div>
-                <div class="address">101000, г.Москва, ул. Пушкина, Колотушкино 20, п. 1</div>
+                <div class="address">140000, г.Павлодар</div>
                 <div>
                     <span class="mail_span">E-mail:</span>
-                    <a href="mailto:01.alexsandr.46@gmail.com">01.alexsandr.46@gmail.com</a>
+                    <a href="mailto:parashute@jimmystobacco.kz">parashute@jimmystobacco.kz</a>
                 </div>
 
-                <a class="footer_phone" href="tel:+77074984312">+77074984312</a>
+                <a class="footer_phone" href="tel:+77475867044">
+                    +77475867044
+                </a>
 
 
                 <div class="social">
                     <a target="_blank" href="https://telegram.me/flip1124z" class="link_telegram"></a>
-                    <a target="_blank" href="https://instagram.com/a.polyakov_776" class="link_instagram"></a>
+                    <a target="_blank" href="https://www.instagram.com/elfbarpvlparashut" class="link_instagram"></a>
                 </div>
             </div>
         </div>

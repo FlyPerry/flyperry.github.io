@@ -11,6 +11,10 @@ use yii\web\Cookie;
 
 class CheckoutController extends Controller
 {
+    private $mrh_login = 'jimmystobaccokz';
+    private $mrh_pass1 = 'rtOva3HL2WG5jfD6hF4G';
+    private $mrh_pass2 = 'su4AUOTf95K37jkXHunZ';
+
     private function isPaymentValid(array $order, array $response): bool
     {
         if (array_key_exists('payamount', $response) === false) {
@@ -28,63 +32,90 @@ class CheckoutController extends Controller
 
     public function actionIndex()
     {
+        $description = '';
         $cookies = Yii::$app->request->cookies;
-        if (!$cookies->has('basket')){
+        if (!$cookies->has('basket')) {
             return $this->redirect(['basket/index']);
         }
         $basket = json_decode(Yii::$app->request->cookies->getValue('basket', []));
 
         if ($basket != NULL)
-        $amount = 0;
+            $amount = 0;
         $items = [];
         foreach ($basket as $productId => $quantity) {
             $product = Items::findOne($quantity->id);
             $items[] = $quantity;
             $amount += $product->amount * $quantity->count;
+            $description .= $product->itemName . ' | ';
         }
+
 
         Pay::createPayment($amount, $items);
 
         $orderid = (new Pay())->lastorderid;
-        \WebToPay::redirectToPayment([
-            'projectid' => 244012,
-            'sign_password' => 'f6c79f4af478638c39b206ec30ab166b',
-            'orderid' => $orderid,
-            'amount' => $amount,
-            'currency' => 'EUR',
-            'country' => 'KZ',
-            'accepturl' => 'https://mytestshop.kz/checkout/accept',
-            'cancelurl' => 'https://mytestshop.kz/checkout/cancel',
-            'callbackurl' => 'https://mytestshop.kz/checkout/callback',
-            'test' => 1,
-        ]);
+
+        // your registration data
+        $inv_id = $orderid;        // shop's invoice number
+        // (unique for shop's lifetime)
+        $inv_desc = $description;    // invoice desc
+        $out_summ = $amount;    // invoice summ
+
+        // build CRC value
+        $crc = md5("$this->mrh_login:$out_summ:$inv_id:$this->mrh_pass1");
+
+        // build URL
+        $url =
+            "https://auth.robokassa.kz/Merchant/Index.aspx?MerchantLogin=$this->mrh_login&" .
+
+            "OutSum=$out_summ&InvId=$inv_id&Description=$inv_desc&SignatureValue=$crc&IsTest=1";
+
+        // print URL if you need
+        return $this->redirect($url);
     }
 
-    public function actionCallback()
+//    public function actionCallback()
+//    {
+//        try {
+//            $response = \WebToPay::validateAndParseData(
+//                $_REQUEST,
+//                244012,
+//                'f6c79f4af478638c39b206ec30ab166b'
+//            );
+//
+//            if ($response['status'] === '1' || $response['status'] === '3') {
+//                //@ToDo: Validate payment amount and currency, example provided in isPaymentValid method.
+//                //@ToDo: Validate order status by $response['orderid']. If it is not already approved, approve it.
+//
+//                echo 'OK';
+//            } else {
+//                throw new \Exception('Payment was not successful');
+//            }
+//        } catch (\Exception $exception) {
+//            echo get_class($exception) . ':' . $exception->getMessage();
+//        }
+//    }
+
+    public function actionAccept($OutSum, $InvId, $SignatureValue)
     {
-        try {
-            $response = \WebToPay::validateAndParseData(
-                $_REQUEST,
-                244012,
-                'f6c79f4af478638c39b206ec30ab166b'
-            );
+        $checkoutDetails = json_decode(Yii::$app->request->cookies->getValue('checkoutDetails', []));
+        print_r($checkoutDetails);
+        $sql = 'INSERT INTO orders (`itemID`, `fio`, `adress`, `phone`) 
+        VALUES (:itemID, :fio, :adress, :phone)';
 
-            if ($response['status'] === '1' || $response['status'] === '3') {
-                //@ToDo: Validate payment amount and currency, example provided in isPaymentValid method.
-                //@ToDo: Validate order status by $response['orderid']. If it is not already approved, approve it.
+        $params = [
+            ':itemID' => $InvId,
+            ':fio' => $checkoutDetails->checkoutName,
+            ':adress' => $checkoutDetails->checkoutAdress,
+            ':phone' => $checkoutDetails->checkoutPhone,
+        ];
+        Yii::$app->db->createCommand($sql, $params)->execute();
 
-                echo 'OK';
-            } else {
-                throw new \Exception('Payment was not successful');
-            }
-        } catch (\Exception $exception) {
-            echo get_class($exception) . ':' . $exception->getMessage();
+        $result = Pay::updateStatusToOneByOrderId($InvId);
+        if ($result > 0) {
+            Yii::$app->session->setFlash('success', 'Заказ был успешно оформлен.');
         }
-    }
-
-    public function actionAccept()
-    {
         Yii::$app->response->cookies->remove('basket');
-        return $this->render('accept');
+
+        return $this->redirect(['site/index']);
     }
 }

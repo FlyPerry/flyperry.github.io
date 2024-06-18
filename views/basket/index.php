@@ -13,6 +13,7 @@ use yii\web\View;
 $csrfToken = Yii::$app->request->csrfToken;
 $checkoutDetails = json_decode($checkoutDetails, true);
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"></script>
 
 <div class="breadcrumb">
     <span><a href="../index.htm">Главная</a> / </span>
@@ -73,29 +74,49 @@ $checkoutDetails = json_decode($checkoutDetails, true);
             <div class="left">
                 <div class="contacts">
                     <form id="applyContacts">
-                        <input type="text" name="checkoutName" class="checkoutName"
-                               value="<?= $checkoutDetails['checkoutName'] ?>"
+                        <input type="text" name="checkoutName" class="checkoutName" required
+                               value="<?= isset($checkoutDetails['checkoutName']) ? $checkoutDetails['checkoutName'] : '' ?>"
                                placeholder="Введите ваше имя">
-                        <input type="text" name="checkoutAdress" class="checkoutAdress"
-                               value="<?= $checkoutDetails['checkoutAdress'] ?>"
+                        <input type="text" name="checkoutAdress" class="checkoutAdress" required
+                               value="<?= isset($checkoutDetails['checkoutAdress']) ? $checkoutDetails['checkoutAdress'] : '' ?>"
                                placeholder="Введите ваш адрес">
-                        <input type="text" name="checkoutPhone" class="checkoutPhone"
-                               value="<?= $checkoutDetails['checkoutPhone'] ?>"
-                               placeholder="Введите ваш номер телефона">
+                        <input type="text" name="checkoutPhone" class="checkoutPhone" required
+                               value="<?= isset($checkoutDetails['checkoutPhone']) ? $checkoutDetails['checkoutPhone'] : '' ?>"
+                               placeholder="+7(___)___-__-__" maxlength="15">
                         <button class="saveCheckOutInfoButton">Сохранить</button>
                     </form>
                 </div>
             </div>
             <div class="right">
-                <div class="total_basket_wrapp"><span>Итоговая сумма: </span><span id="basket_total"><span
-                                class="amountCost">
-                            <?= $basketSum; ?></span> тг.</span>
+                <div class="total_basket_wrapp"><span>Итоговая сумма: </span>
+                    <span id="basket_total">
+                        <span class="amountCost"> <?= $basketSum; ?></span>
+                        тг.</span>
                 </div>
-                <a class="checkout_btn" href="/checkout/">Оформить заказ</a>
+
+                <a class="checkout_btn" type="submit">Оплатить</a>
+
+
             </div>
         </div>
     </div>
-
+    <script>
+        $(document).ready(function () {
+            $('.checkoutPhone').mask('+9 (999) 999-99-99')
+            $('.checkout_btn').on('click', function (event) {
+                // Проверка формы
+                var form = document.getElementById('applyContacts');
+                if (!form.checkValidity()) {
+                    event.preventDefault(); // Останавливаем переход по ссылке
+                    alert('Пожалуйста, заполните все обязательные поля.');
+                    form.reportValidity(); // Показываем нативные подсказки браузера о незаполненных полях
+                }else{
+                    $('#applyContacts').submit();
+                    window.location.href = '/checkout/';
+                }
+            });
+        });
+    </script>
 <?php endif;
 
 

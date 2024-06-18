@@ -62,8 +62,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $items = Items::find()->where(['hit'=>'1'])->all();
-        return $this->render('index',['items'=>$items]);
+        $items = Items::find()
+            ->orderBy(new \yii\db\Expression('RAND(),hit,new'))
+            ->limit(48)
+            ->all();
+        return $this->render('index', ['items' => $items]);
     }
 
     /**

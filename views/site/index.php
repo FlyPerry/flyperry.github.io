@@ -12,7 +12,7 @@ $this->title = 'Parashute - Интернет магазин';
 //die;
 ?>
 <div class="items_wrapper popular">
-    <h2>Популярные товары</h2>
+    <h2>Наши товары</h2>
     <div class="items">
         <?php foreach ($items as $item): ?>
             <div class="item" data-discount-type="percent" data-code="<?=$item->id; ?>">

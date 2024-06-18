@@ -136,7 +136,7 @@ class Items extends \yii\db\ActiveRecord
                 $this->imageFile->saveAs(
                     __DIR__ . '/../web/uploads/' .
                     $this->imageFile->baseName . '.' .
-                    $this->imageFile->extension
+                    $this->imageFile->extension, false
                 );
                 return true;
             } else {

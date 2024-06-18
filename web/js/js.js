@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
     $('#item-image').change(function () {
         var input = this;
         if (input.files && input.files[0]) {
@@ -11,7 +13,7 @@ $(document).ready(function () {
             reader.readAsDataURL(input.files[0]);
         }
     });
-    
+
     var checkboxes = $('.btn-checkbox input[type="checkbox"]');
     checkboxes.each(function () {
         var checkbox = $(this);

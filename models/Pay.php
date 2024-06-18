@@ -72,4 +72,26 @@ class Pay extends \yii\db\ActiveRecord
     {
         return self::find()->orderBy(["orderid" => SORT_DESC])->one()->orderid;
     }
+
+    /**
+     * Updates the status to 1 by order ID
+     *
+     * @param int $orderid
+     * @return int The number of rows affected
+     */
+    public static function updateStatusToOneByOrderId($orderid)
+    {
+        return self::updateAll(['status' => 1], ['orderid' => $orderid]);
+    }
+
+    /**
+     * Gets related order
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getOrder()
+    {
+        return $this->hasOne(Orders::class, ['itemID' => 'orderid']);
+    }
+
 }

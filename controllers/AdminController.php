@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Items;
+use app\models\Pay;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\web\NotFoundHttpException;
@@ -59,6 +60,16 @@ class AdminController extends \yii\web\Controller
     {
         return $this->render('/items/view', [
             'model' => $this->findModel($id),
+        ]);
+    }
+
+    public function actionOrders()
+    {
+        $payments = Pay::find()->innerJoinWith('order')->all();
+
+        // Рендеринг представления с передачей данных
+        return $this->render('orders', [
+            'payments' => $payments,
         ]);
     }
 
