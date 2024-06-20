@@ -47,6 +47,7 @@ class Items extends \yii\db\ActiveRecord
     {
         return new ItemsQuery(get_called_class());
     }
+
     /**
      * Get query for deleted items.
      *
@@ -56,6 +57,7 @@ class Items extends \yii\db\ActiveRecord
     {
         return self::find()->where(['deleted' => 1]);
     }
+
     public function init()
     {
         parent::init();
@@ -164,4 +166,59 @@ class Items extends \yii\db\ActiveRecord
         return $this->hasMany(Catalog::class, ['id' => 'categoryID'])
             ->viaTable('categories_item', ['itemID' => 'id']);
     }
+
+    public static function minusItem($itemID, $count)
+    {
+        // Find the item by its ID
+        $item = self::findOne($itemID);
+
+        // Check if the item exists
+        if ($item === null) {
+            throw new \Exception("Item not found.");
+        }
+
+        // Check if the current inStock is greater than or equal to the count to be subtracted
+        if ($item->inStock >= $count) {
+            // Subtract the count from inStock
+            $item->inStock -= $count;
+            $item->category_id = $item->getCategories()->one()->id;
+            // Save the updated item
+            if ($item->save()) {
+                return true;
+            } else {
+                // Вывести ошибки модели
+                $errors = $item->getErrors();
+                throw new \Exception("Failed to save the item. Errors: " . json_encode($errors));
+            }
+        } else {
+            throw new \Exception("Not enough stock available.");
+        }
+    }
+
+    public static function plusItem($itemID, $count)
+    {
+        // Найти товар по его ID
+        $item = self::findOne($itemID);
+
+        // Проверить, существует ли товар
+        if ($item === null) {
+            throw new \Exception("Item not found.");
+        }
+
+        // Увеличить количество товаров на складе
+        $item->inStock += $count;
+
+        // Получить категорию товара
+        $item->category_id = $item->getCategories()->one()->id;
+
+        // Сохранить обновленный товар
+        if ($item->save()) {
+            return true;
+        } else {
+            // Вывести ошибки модели
+            $errors = $item->getErrors();
+            throw new \Exception("Failed to save the item. Errors: " . json_encode($errors));
+        }
+    }
+
 }

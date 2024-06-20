@@ -57,6 +57,7 @@ $config = [
                 'items/<id:[\w-]+>' => 'items/view-by-title',
                 'catalog/<id:[\w-]+>' => 'catalog/index-by-id',
                 'basket/' => 'basket/index',
+                'basket/remove-item' => 'basket/remove-item',
             ],
         ],
 

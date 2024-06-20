@@ -14,6 +14,11 @@ use Yii;
  */
 class Pay extends \yii\db\ActiveRecord
 {
+
+    const STATUS_PAYED = 1;
+    const STATUS_CANCELED = 0;
+    const STATUS_PROGRESS = 2;
+
     /**
      * {@inheritdoc}
      */
@@ -54,7 +59,7 @@ class Pay extends \yii\db\ActiveRecord
      * @param int $status
      * @return bool
      */
-    public static function createPayment($amount, $items, $status = 0)
+    public static function createPayment($amount, $items, $status = 2)
     {
         $payment = new self();
         $payment->amount = $amount;
@@ -92,6 +97,16 @@ class Pay extends \yii\db\ActiveRecord
     public function getOrder()
     {
         return $this->hasOne(Orders::class, ['itemID' => 'orderid']);
+    }
+
+    public function getStatusTitle()
+    {
+        if ($this->status == self::STATUS_PAYED) {
+            return 'Оплачено';
+        } elseif ($this->status == self::STATUS_CANCELED) {
+            return 'Отменён';
+        }
+        return 'В процессе';
     }
 
 }

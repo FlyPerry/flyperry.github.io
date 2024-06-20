@@ -1,9 +1,7 @@
 <?php
 
 /* @var $this \yii\web\View */
-
 /* @var $basketCookie mixed */
-
 /* @var $checkoutDetails mixed */
 
 use app\models\Items;
@@ -66,7 +64,9 @@ $checkoutDetails = json_decode($checkoutDetails, true);
                     <div class="total">
                         <div class="total_new"></div>
                         <span class="amountSum"><?= $itemSum; ?> тг.</span></div>
-                    <div class=""></div>
+                    <div class="remove-item">
+                        <button class="btn btn-danger remove-item-btn" data-id="<?= $item->id; ?>">Удалить</button>
+                    </div>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -95,8 +95,6 @@ $checkoutDetails = json_decode($checkoutDetails, true);
                 </div>
 
                 <a class="checkout_btn" type="submit">Оплатить</a>
-
-
             </div>
         </div>
     </div>
@@ -110,15 +108,40 @@ $checkoutDetails = json_decode($checkoutDetails, true);
                     event.preventDefault(); // Останавливаем переход по ссылке
                     alert('Пожалуйста, заполните все обязательные поля.');
                     form.reportValidity(); // Показываем нативные подсказки браузера о незаполненных полях
-                }else{
+                } else {
                     $('#applyContacts').submit();
-                    window.location.href = '/checkout/';
+                    window.location.href = '/checkout/accept';
                 }
+            });
+
+            $('.remove-item-btn').on('click', function () {
+                var itemId = $(this).data('id');
+                $.ajax({
+                    url: '/basket/remove-item',
+                    method: 'POST',
+                    data: {
+                        id: itemId,
+                        _csrf: '<?= $csrfToken; ?>'
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            location.reload(); // Reload the page to reflect changes
+                        } else {
+                            alert('Не удалось удалить товар из корзины.');
+                        }
+                    },
+                    error: function() {
+                        alert('Произошла ошибка при удалении товара.');
+                    }
+                });
             });
         });
     </script>
-<?php endif;
+<?php else:?>
 
+<h3>Ваша корзина пуста! <?=Html::a('Перейти к покупкам!',['site/index'])?></h3>
+
+<? endif;
 
 $js = "
 function updateBasketCookie(itemId, itemCount) {
@@ -178,4 +201,3 @@ $this->registerJs(<<<JS
 
 JS, View::POS_READY);
 ?>
-

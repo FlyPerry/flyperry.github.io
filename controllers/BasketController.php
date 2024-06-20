@@ -9,6 +9,41 @@ use yii\web\Response;
 
 class BasketController extends Controller
 {
+    public function actionRemoveItem()
+    {
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+
+        $itemId = Yii::$app->request->post('id');
+        $basketCookie = Yii::$app->request->cookies->getValue('basket');
+
+        if ($basketCookie !== null) {
+            $basketItems = json_decode($basketCookie, true);
+
+            // Find the item index in the basket array
+            $itemIndex = array_search($itemId, array_column($basketItems, 'id'));
+
+            if ($itemIndex !== false) {
+                // Remove the item from the basket array
+                array_splice($basketItems, $itemIndex, 1);
+
+                // Update the basket cookie
+                Yii::$app->response->cookies->add(new \yii\web\Cookie([
+                    'name' => 'basket',
+                    'value' => json_encode($basketItems),
+                    'expire' => time() + 86400 * 365, // Example: 1 year expiration
+                ]));
+
+                // Check if basket is now empty and delete the cookie if it is
+                if (empty($basketItems)) {
+                    Yii::$app->response->cookies->remove('basket');
+                }
+
+                return ['success' => true, 'basket' => $basketItems];
+            }
+        }
+
+        return ['success' => false, 'error' => 'Item not found in basket'];
+    }
     public function actionAddToBasket()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;

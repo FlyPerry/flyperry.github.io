@@ -2174,10 +2174,6 @@ footer .bottom ul, footer .top .inner ul, ul {
     padding: 0 0 0 35px
 }
 
-.content ul {
-    list-style: disc;
-    padding-left: 40px
-}
 
 .content h1, .content h2, .content h3 {
     font-size: 28px;
@@ -4521,11 +4517,6 @@ a.category {
     text-decoration: none
 }
 
-.pagination span, a.category .title {
-    text-align: center;
-    text-decoration: none
-}
-
 a.category .title {
     background-color: rgba(255, 255, 255, .6);
     padding: 5px 10px;
@@ -4540,46 +4531,6 @@ a.category .title {
     border: 1px solid #eee;
     margin: 0 auto;
     width: 300px
-}
-
-.pagination {
-    display: -webkit-box;
-    display: flex;
-    width: 100%;
-    margin-top: 30px
-}
-
-.pagination span {
-    margin-right: 10px;
-    display: block;
-    font-size: var(--bodyFontSize);
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    background: #eee;
-    border-radius: 4px
-}
-
-.pagination span:first-child a, .pagination span:last-child a {
-    background: 0 0
-}
-
-.pagination .page-item.active {
-    background: var(--mainSchemeColor)
-}
-
-.pagination .feather {
-    padding: 5px 0;
-    width: 40px;
-    height: 40px;
-    stroke-width: 1px
-}
-
-.pagination a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #333
 }
 
 #optorder {
