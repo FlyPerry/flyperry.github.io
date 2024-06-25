@@ -155,16 +155,16 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                 <div class="header_right">
 
                     <div class="phone">
-                        <a href="tel:+77475867044">+77475867044</a>
+                        <a href="tel:+77472539914">+77472539914</a>
                     </div>
 
                     <div class="search_open">
                         <i class="f7-icons">search</i>
                     </div>
                     <div class="search_form">
-                        <form method="GET" action="/search/">
+                        <form method="GET" action="/site/">
                             <input type="text" name="search" id="search" required="required"
-                                   placeholder="Что будем искать?" autocomplete="off" autofocus="" value="">
+                                   placeholder="Что будем искать?" autocomplete="off" value="">
                             <button type="submit">
                                 <i class="f7-icons">search</i>
                             </button>
@@ -307,8 +307,8 @@ $categories = ['1' => 'Электронные сиграреты', '2' => 'Жи�
                     <a href="mailto:parashute@jimmystobacco.kz">parashute@jimmystobacco.kz</a>
                 </div>
 
-                <a class="footer_phone" href="tel:+77475867044">
-                    +77475867044
+                <a class="footer_phone" href="tel:+77472539914">
+                    +77472539914
                 </a>
 
 

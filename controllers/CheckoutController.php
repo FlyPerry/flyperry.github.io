@@ -49,8 +49,12 @@ class CheckoutController extends Controller
             $amount += $product->amount * $quantity->count;
             $description .= $product->itemName . ' | ';
         }
+
+
         Pay::createPayment($amount, $items);
+
         $orderid = (new Pay())->lastorderid;
+
         // your registration data
         $inv_id = $orderid;        // shop's invoice number
         // (unique for shop's lifetime)

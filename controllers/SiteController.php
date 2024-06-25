@@ -64,6 +64,7 @@ class SiteController extends Controller
     {
         $items = Items::find()
             ->orderBy(new \yii\db\Expression('RAND(),hit,new'))
+            ->andWhere('inStock>0')
             ->limit(48)
             ->all();
         return $this->render('index', ['items' => $items]);

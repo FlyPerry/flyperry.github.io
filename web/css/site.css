@@ -108,7 +108,7 @@ ul.pagination li.next span:hover {
     background-repeat: repeat-x; /* Повторять изображение только по оси x */
     width: 100%; /* Ширина вашего div */
     height: 300px; /* Высота вашего div */
-    animation: scrollBackground 7s linear infinite; /* Анимация для движения */
+    animation: scrollBackground 10s linear infinite; /* Анимация для движения */
 }
 
 @keyframes scrollBackground {
